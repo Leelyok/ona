@@ -1,5 +1,42 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant-numeric: lining-nums;
+    background-size: cover;
+    background-position: center;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
 }
+
+.z-0 {
+    z-index: 0;
+  }
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .absolute {
+    position: absolute;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+   }
+
+
+   .text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+  }
+  .text-center {
+    text-align: center;
+  }
+  .z-10 {
+    z-index: 10;
+  }
