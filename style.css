@@ -9,6 +9,106 @@
     scrollbar-width: none;
 }
 
+/*   Universal styles   */
+
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+
+
+.padded      { padding: 5%;    }
+.padded-10pr   { padding: 10%;    }
+.padded-2p   { padding: 2%;    }
+.padded-05 { padding: 0.5rem;  }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+.padded-6  { padding: 6rem;  }
+.padded-10  { padding: 10rem;  }
+.padded-20  { padding: 20rem;  }
+
+
+.padded-t  { padding-top: 5%;     }
+.padded-b  { padding-bottom: 5%;  }
+.padded-l  { padding-left: 4%;    }
+.padded-r  { padding-right: 5%;   }
+.padded-ntb  { 
+  padding-right: 5%;
+  padding-left: 5%; 
+}
+.padded-tb  { 
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.padded-0 { padding: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-t-0 { padding-top: 0; }
+.padded-l-0  { padding-left: 0;  }
+.padded-left {  padding: 0rem 20px;}
+
+.margin-b-0 { margin-bottom: 0; }
+
+.margin      { margin: 1rem; }
+.margin-10     { margin: 10%; }
+.margin-t-1 {  margin-top: 1rem;}
+.margin-t-2 {  margin-top: 2rem;}
+.margin-t-5 {  margin-top: 5%;}
+.margin-t-m7 { margin-top: -7rem; }
+.margin-t-m1 { margin-top: -1rem; }
+.m-t-m10 {  margin-top: -10rem;}
+.m-l-m7  {  margin-left: -7rem;}
+.m-l-m4  {  margin-left: -4rem;}
+
+.margin-b-1 { margin-bottom: 1rem;}
+.margin-b-2 { margin-bottom: 2rem;}
+
+
+.bg-light     { background-color: #f7f4ef; }
+.bg-white     { background-color: #ffffff;}
+.bg-green     { background-color: #9b9b81;}
+.bg-black     { background-color: #414141;  }
+.bg-dark      { background-color: #5a5a4e; }
+
+.bg-yellow { background-color: #f9ba4e; }
+.bg-blue { background-color: #D4DFE5; }
+.bg-red { background-color: #c86757; }
+.bg-beige { background-color: #F5EFE8; }
+.bg-light2 { background-color: #f2efea }
+
+.bg-footer { background-color: #E6E0D0;}
+
+.text-light { color: #fff; } 
+.text-dark {  color: #414141;}
+.black {  color: #000;}
+
+.subtle {    
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+.title-text {
+  /*font-family: 'Merriweather Sans', sans-serif;*/
+  font-size: 1.9rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+/*  video section  */
+
 .z-0 {
     z-index: 0;
   }
@@ -40,3 +140,21 @@
   .z-10 {
     z-index: 10;
   }
+
+
+
+/*  Image  */
+
+img { max-width: 100%; }
+
+.small-img {  max-width: 40%; }
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-hair {
+  background-image: url(/assets/HAIR\ CARE.jpg);
+}
