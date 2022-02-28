@@ -9,6 +9,8 @@
     scrollbar-width: none;
 }
 
+html {  scroll-behavior: smooth;}
+
 /*   Universal styles   */
 
 .tall-50 { min-height: 50vh; }
@@ -97,37 +99,162 @@
 
 .title-text {
   /*font-family: 'Merriweather Sans', sans-serif;*/
-  font-size: 1.9rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  font-weight: bold;
 }
 
+.upper {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  word-spacing: 0.2rem;
+}
+
+.lower {
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+.emphasis {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #414141;
+  font-style: italic;
+}
+
+.flex-flip-alternate:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+/* Typography */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: 'Prata', serif;
+}
+
+h2,h3,h4,h5,h6 {
+  margin-bottom: 0.5rem;
+  /*letter-spacing: -0.01em;*/
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {  font-size: 2rem;}
+
+p  {
+font-weight: 300;   
+line-height: 1.4;
+margin-bottom: 0.8rem;
+font-size: 1.05rem;
+}
+
+/* this makes sure that the last element in any container doesn't have margin-bottom */
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom:0;
+}
+
+.text-big {  font-size: 4rem;}
+.text-bold  { font-weight: bold;}
+.text-normal  { font-weight: normal;}
+.text-small {   font-size: 0.7rem;}
+
+.big-bold {
+font-family: 'Merriweather Sans', sans-serif;
+color: #414141;
+font-weight: bold;
+font-size: 7vw;
+letter-spacing: -0.2vw;
+}
+
+.big-number {  font-size: 3.5rem; }
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+a:hover { color: #a2745c; }
+
+
+/*   block & buttons  */
+.block    { display: block;}
+
+.button {
+  text-decoration: none;
+  border: 2px solid; 
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #9d614c;
+  border-radius: 0.5rem;
+}
+
+.button-tb {
+  text-decoration: none;
+  border-top: 1px solid; 
+  border-bottom: 1px solid; 
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #2c2522;
+}
+
+
+.button-b {
+  text-decoration: none;
+  border-bottom: 1px solid; 
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #2c2522;
+}
+
+.button:hover {
+    color: #dec4bb;
+}
 
 
 
 /*  video section  */
 
-.z-0 {
-    z-index: 0;
-  }
-  .inset-0 {
+.z-0 {    z-index: 0;  }
+.inset-0 {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
   }
-  .absolute {
-    position: absolute;
-  }
+  .absolute {    position: absolute;  }
+
   img, video {
     max-width: 100%;
     height: auto;
   }
   audio, canvas, embed, iframe, img, object, svg, video {
     display: block;
-   }
+  }
 
 
    .text-white {
@@ -140,6 +267,10 @@
   .z-10 {
     z-index: 10;
   }
+
+  .place-content-center {    place-content: center;  }
+
+  .overflow-hidden {    overflow: hidden;  }
 
 
 
@@ -155,6 +286,469 @@ img { max-width: 100%; }
     background-repeat: no-repeat;
 }
 
-.bg-hair {
-  background-image: url(/assets/HAIR\ CARE.jpg);
+.bg-hair {  background-image: url(/assets/HAIR-CARE.jpg);}
+.bg-eyes {  background-image: url(/assets/EYELASH-EYEBROW-CARE.png);}
+.bg-nail {  background-image: url(/assets/NAIL-CARE.jpg);}
+.bg-skin {  background-image: url(/assets/SKIN-CARE.jpg);}
+.bg-epil {  background-image: url(/assets/EPILATION.jpg);}
+.bg-body {  background-image: url(/assets/BODY-CARE.jpg);}
+
+/* Header & Footer - #c2b0a1 */
+
+
+header {    display: inline;  }
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  padding: 0%;
+}
+nav a:hover {color: rgb(63,83,101); }
+
+header nav a, .inline a {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+footer {
+    color: #1D1D1B;
+}
+
+.small-footer {
+  font-size: .6rem;
+  font-weight: 200;
+  letter-spacing: .05rem;
+}
+
+
+
+/*  Mobile Menu Styles  */
+
+.mobile-menu {
+  display: none; 
+  background-color: #faf4ed;
+  padding: 5%;
+  position: fixed; 
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  text-align: left;
+  z-index: 3;
+}
+
+.mobile-menu a {
+  text-decoration: none; 
+  color: inherit; 
+  padding: 5vh 5%;
+  display: block;
+  font-weight: normal;
+  font-size: 1.5rem;
+ }
+
+ /*   BURGER MENU  */
+.menu-p{
+  position:absolute;
+  bottom:-2rem;
+}
+
+.burger-button {
+  position:fixed;
+  top: 5vh;
+  right: 2vh;
+  z-index: 20;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 1px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+  z-index: 20;
+}
+.burger-button.active span{
+  border-color: black;
+  background-color:black;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left:100vw;
+    right: 0vw;
+    bottom: 0;
+    background-color: #b1a690;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 15;
+    transition:1s;
+    align-content:space-around;
+    justify-content:space-around;
+    flex-direction:column;
+}
+.burger-menu.active{
+  left:0;
+  right:0;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 200;
+  color: #C3BFBC;
+  color: #356a55;
+  color: white;
+  font-family: 'Mazzard Soft', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu a:hover {
+  color: black
+}
+
+
+/*   FINISH BURGER MENU   */
+
+.inline a p {
+    display: block;
+    padding: 0.6rem;
+}
+
+a.bg-image {  display: block;}
+
+/* Icon Grid Section  */
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+
+.flex-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.relative { position: relative;}
+
+
+/*   HR   */
+  
+.mobile-menu hr {
+  margin-left: 4.1rem;
+}
+
+
+hr {
+  border: none;
+  border-bottom: 2px solid;
+  width: 4rem;
+}
+
+hr.wide {
+  width: 8rem;
+  margin: 2rem auto;
+}
+
+/* Background Images */
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.logo-img {
+object-fit: cover;
+object-position: center;
+position: absolute;
+top: 50%;
+right: 3%;
+width: 600px;
+height: 350px;
+z-index: 1;
+}
+
+.quote {
+object-fit: contain;
+object-position: center;
+height: 10vh;
+margin-bottom: -5rem;
+}
+
+.small-img img {  max-width: 30%;}
+
+
+
+.banner, .banner-with-header {
+  background-size: cover;
+  /*background-position: center;  */
+  position: relative;
+}
+
+
+.portrait       {  padding-bottom: 115%;}
+.landscape      {  padding-bottom: 65%;}
+.wide-landscape {  padding-bottom: 33%;}
+.tall-landscape {  padding-bottom: 68%;}
+
+.opacity08 { opacity: 0.8;}
+
+.shape-window {
+  border-top-left-radius: 22rem;
+  border-top-right-radius: 22rem;
+}
+
+.bg-split-rose-blue {background: linear-gradient(180deg, #ebe8e9 50%, #D4DFE5 50%);}
+
+.bg-split-tan-white {background: linear-gradient(180deg, #F2EEE9 50%, white 50%);}
+
+
+.fixed {  background-attachment: fixed; }
+
+/*  dropdown menu*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   }
+.dropdown-title {
+    padding: 0.35rem 0.5rem;
+    display: inline-block;
+   }
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    padding: 0.5rem;
+    display: none;
+    background-color: white;
+    z-index: 2;
+    text-align: left;
+    min-width: 10rem;
+   }
+.dropdown:hover .dropdown-content {
+    display: block;
+   }
+.dropdown-content a {
+    display: block;
+   }
+
+
+   
+/*  Contact form */
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: grey;
+}
+
+textarea {
+  min-height: 4rem;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: #6C7A89;
+  font-weight: bold;
+}
+
+form button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0;
+}
+
+.form-styled input,
+.form-styled texarea {
+  border: 2px solid rgb(220,220,220);;
+  background-color: #Fff;
+}
+
+.form-styled label {
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.form-styled button {
+  border: 2px solid #e6e0d0;
+  width: 100%;
+  background-color: #e6e0d0;
+  color: #696666;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.form-styled input:focus,
+.form-styled textarea:focus {
+  border-color: #6C7A89;
+}
+
+
+
+ /* Card Styles  */
+ .card {
+  padding-top: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  min-height: 500px;
+  max-width: 95%;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+}
+
+.card img {
+  margin-top: -2.5rem;
+}
+
+
+
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md,
+.hide {
+display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+  
+  .md-tall-80 {  min-height: 80vh;}
+  .md-tall-70 {  min-height: 70vh;}
+  .md-tall-60 {  min-height: 60vh;}
+  .md-tall-50 {  min-height: 50vh;}
+  
+
+  .emphasis { font-size: 1rem; }
+  
+  header h3 { font-size: 10vw;}
+  h1 { font-size: 2.5rem;}
+  p {  font-size: 0.9rem;}
+
+  .padded-10 { padding: 1rem;}
+   
+  .title-text {   font-size: 1rem;  }
+  
+}
+
+/* SM - max-width in pixels approximately 768px */
+@media(max-width: 48em) {
+
+  .hide-sm { display: none;  }
+
+  .center-sm { text-align: center; }
+
+  .flex-flip-sm { flex-direction: column-reverse; }
+
+  .margin-10 {  margin: 0;}
+  .mob-mt    {  margin-top: 2rem;  }
+
+  h1 { font-size: 2rem;}
+  h2 { font-size: 1.4rem;}
+  h3 { font-size: 1.3rem;}
+  
+
+  .upper { font-size: 0.9rem; }
+  .text-big { font-size: 2.5rem; }
+
+  .mob-padded-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  .logo-img {
+      top: 0;
+      height: 173px;
+      max-width: 70%;
+    }
+
+    .emphasis {   font-size: 0.8rem;   }
+    .slider-item p { font-size: 1.2rem;}
+
+    .padded-20  { padding: 14rem;  }
+}
+
+@media(max-width: 36em) {
+
+  h1 { font-size: 1.3rem;}
+
+  h3 { font-size: 1.1rem;}
 }
