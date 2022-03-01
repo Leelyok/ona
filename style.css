@@ -154,9 +154,9 @@ h3 {  font-size: 2rem;}
 
 p  {
 font-weight: 300;   
-line-height: 1.4;
-margin-bottom: 0.8rem;
-font-size: 1.05rem;
+line-height: 1.6;
+margin-bottom: 1rem;
+font-size: 1.1rem;
 }
 
 /* this makes sure that the last element in any container doesn't have margin-bottom */
