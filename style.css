@@ -205,14 +205,26 @@ a:hover { color: #a2745c; }
 /*   block & buttons  */
 .block    { display: block;}
 
-.button {
-  text-decoration: none;
-  border: 2px solid; 
-  padding: 0.5rem 1rem;
+.button, .button-solid {
   display: inline-block;
-  font-weight: 400;
-  color: #9d614c;
-  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 1em 0;
+  padding: .8rem 2rem;
+  text-transform: uppercase;
+  color: #41414d;
+  border: 2px solid #41414d;
+    border-top-color: rgb(65, 65, 77);
+    border-right-color: rgb(65, 65, 77);
+    border-bottom-color: rgb(65, 65, 77);
+    border-left-color: rgb(65, 65, 77);
+  letter-spacing: 1px;
+  line-height: 1;
+  transition: .2s ease;
+}
+
+.inverted.button, .white.button {
+  color: #fff;
+  border-color: #fff;
 }
 
 .button-tb {
@@ -730,6 +742,11 @@ display: none;
 
   .upper { font-size: 0.9rem; }
   .text-big { font-size: 2.5rem; }
+  .text-6vw { font-size: 6vw;  }
+  .text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 
   .mob-padded-0 {
       padding-left: 0;
