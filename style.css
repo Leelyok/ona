@@ -308,7 +308,7 @@ a:hover { color: #726452; }
 
 img { max-width: 100%; }
 
-.small-img {  max-width: 40%; }
+.small-img {  max-width: 25%; }
 
 .bg-image {
     background-size: cover;
