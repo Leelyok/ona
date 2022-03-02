@@ -83,12 +83,12 @@ html {  scroll-behavior: smooth;}
 .bg-footer { background-color: #E6E0D0;}
 
 .text-light { color: #fff; } 
-.text-dark {  color: #414141;}
+.text-dark {  color: #443c31;}
 .black {  color: #000;}
 
 .subtle {    
-    opacity: 0.8;
-    font-size: 0.9rem;
+    opacity: 0.9;
+    font-size: 1rem;
 }
 
 
@@ -108,7 +108,7 @@ html {  scroll-behavior: smooth;}
 }
 
 .upper {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
@@ -173,9 +173,12 @@ p:last-child {
 .text-bold  { font-weight: bold;}
 .text-normal  { font-weight: normal;}
 .text-small {   font-size: 0.7rem;}
-.text-6vw { font-size: 6vw;  }
+.text-4vw { 
+  font-size: 4vw;
+  text-transform: uppercase;
+}
 .text-2xl {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: 2rem;
 }
 
@@ -214,6 +217,11 @@ a:hover { color: #726452; }
   rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+
+/*  rewrite grig settings  */
+[class*="col-"], [class*="col_"], [class~="col"] {
+  padding: 0 0 0 0;
+}
 
 /*   block & buttons  */
 .block    { display: block;}
@@ -339,8 +347,7 @@ header nav a {
   letter-spacing: 0.1rem;
   font-weight: 400;
   padding: 0%;
-  font-size: 1.1rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 nav a:hover {color: rgb(63,83,101); }
 
@@ -595,13 +602,13 @@ margin-bottom: -5rem;
 .dropdown-content {
     position: absolute;
     top: 100%;
-    left: 1rem;
-    padding: 0.5rem;
+    left: -0.6rem;
+    padding: 0;
     display: none;
-    background-color: white;
-    z-index: 2;
+    background-color: #9c8b75;
+    z-index: 11;
     text-align: left;
-    min-width: 10rem;
+    min-width: 11rem;
    }
 .dropdown:hover .dropdown-content {
     display: block;
