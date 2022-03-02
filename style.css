@@ -72,7 +72,10 @@ html {  scroll-behavior: smooth;}
 .bg-white     { background-color: #ffffff;}
 .bg-green     { background-color: #9b9b81;}
 .bg-black     { background-color: #414141;  }
-.bg-dark      { background-color: #5a5a4e; }
+.bg-dark      { 
+  background-color: black;
+  opacity: 0.73; 
+}
 
 .bg-yellow { background-color: #f9ba4e; }
 .bg-blue { background-color: #D4DFE5; }
@@ -82,7 +85,7 @@ html {  scroll-behavior: smooth;}
 
 .bg-footer { background-color: #E6E0D0;}
 
-.text-light { color: #fff; } 
+.text-white { color: #fff; } 
 .text-dark {  color: #443c31;}
 .black {  color: #000;}
 
