@@ -92,6 +92,7 @@ body {
 
 .text-white { color: #fff; } 
 .text-dark {  color: #443c31;}
+.text-tan   { color: #9c8b75  }
 .black {  color: #000;}
 
 .subtle {    
@@ -184,6 +185,7 @@ p:last-child {
 .text-bold  { font-weight: bold;}
 .text-normal  { font-weight: normal;}
 .text-small {   font-size: 0.7rem;}
+.text-1r {   font-size: 1rem;}
 .text-4vw { 
   font-size: 4vw;
   text-transform: uppercase;
@@ -228,10 +230,11 @@ a:hover { color: #726452; }
 }
 
 
-/*  rewrite grig settings  */
+/*  rewrite grig settings  
 [class*="col-"], [class*="col_"], [class~="col"] {
   padding: 0 0 0 0;
 }
+*/
 
 /*   block & buttons  */
 .block    { display: block;}
@@ -729,6 +732,29 @@ form button {
   border-radius: 1% 1% 1% 1% / 1% 1% 1% 1%;
   box-shadow: 10px -10px 10px 10px rgba(0,0,0,.5);
 }
+
+            
+              
+/* Responsive video */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 
