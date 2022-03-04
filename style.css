@@ -368,6 +368,16 @@ margin-bottom: -5rem;
   background-position: 50% 14%;
 }
 
+.bg-behind {
+  background-image: url(/assets/6.jpg);
+  background-size: cover;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s;
+  background-position: center;
+}
+
 
 /* Header & Footer - #c2b0a1 */
 
