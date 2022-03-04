@@ -40,6 +40,8 @@ body {
 .padded-b  { padding-bottom: 5%;  }
 .padded-l  { padding-left: 4%;    }
 .padded-r  { padding-right: 5%;   }
+.padded-r-10  { padding-right: 10%;   }
+.padded-r-20  { padding-right: 20%;   }
 .padded-ntb  { 
   padding-right: 5%;
   padding-left: 5%; 
@@ -325,17 +327,29 @@ a:hover { color: #726452; }
 
 
 
-/*  Image  */
+/* Background Images */
 
 img { max-width: 100%; }
 
 .small-img {  max-width: 25%; }
 
 .bg-image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s;
 }
+
+.quote {
+object-fit: contain;
+object-position: center;
+height: 10vh;
+margin-bottom: -5rem;
+}
+
+.small-img img {  max-width: 30%;}
 
 .bg-hair {  background-image: url(/assets/HAIR-CARE.jpg);}
 .bg-eyes {  background-image: url(/assets/EYELASH-EYEBROW-CARE.png);}
@@ -343,6 +357,16 @@ img { max-width: 100%; }
 .bg-skin {  background-image: url(/assets/SKIN-CARE.jpg);}
 .bg-epil {  background-image: url(/assets/EPILATION.jpg);}
 .bg-body {  background-image: url(/assets/BODY-CARE.jpg);}
+
+.bg-hands {  
+  background-image: url(/assets/2.jpg);
+  background-size: cover;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s;
+  background-position: 50% 14%;
+}
 
 
 /* Header & Footer - #c2b0a1 */
@@ -554,27 +578,6 @@ hr.wide {
   margin: 2rem auto;
 }
 
-/* Background Images */
-
-.bg-image {
-  background-size: cover;
-  background-position: center;
-  background-color: #F2EEE9;
-  background-repeat: no-repeat;
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.quote {
-object-fit: contain;
-object-position: center;
-height: 10vh;
-margin-bottom: -5rem;
-}
-
-.small-img img {  max-width: 30%;}
-
-
 
 .banner, .banner-with-header {
   background-size: cover;
@@ -593,6 +596,11 @@ margin-bottom: -5rem;
 .shape-window {
   border-top-left-radius: 22rem;
   border-top-right-radius: 22rem;
+}
+
+.shape-drop {
+  border-top-left-radius: 22rem;
+  border-bottom-right-radius: 22rem;
 }
 
 .bg-split-rose-blue {background: linear-gradient(180deg, #ebe8e9 50%, #D4DFE5 50%);}
