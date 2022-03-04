@@ -813,7 +813,13 @@ display: none;
   .md-center { text-align: center;}
   .padded-r-10 { padding: 0;}
   .padded-r-20 { padding: 0;}
-  
+  .bg-banner-md  { 
+    background-image: url(/assets/sand.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #F2EEE9;
+    background-repeat: no-repeat;
+  }
 }
 
 /* SM - max-width in pixels approximately 768px */
