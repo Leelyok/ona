@@ -807,6 +807,12 @@ display: none;
   .padded-10 { padding: 1rem;}
    
   .title-text {   font-size: 1rem;  }
+  .md-tall-50 {  min-height: 50vh;}
+
+  .card h3 {   font-size: 1.5rem;  }
+  .md-center { text-align: center;}
+  .padded-r-10 { padding: 0;}
+  .padded-r-20 { padding: 0;}
   
 }
 
@@ -814,10 +820,12 @@ display: none;
 @media(max-width: 48em) {
 
   .hide-sm { display: none;  }
+  .show-sm {  display: block; }
 
   .center-sm { text-align: center; }
 
-  .flex-flip-sm { flex-direction: column-reverse; }
+  .flex-flip-sm { flex-direction: row-reverse; }
+  .flex-flip-col-sm { flex-direction: column-reverse; }
 
   .margin-10 {  margin: 0;}
   .mob-mt    {  margin-top: 2rem;  }
@@ -825,9 +833,22 @@ display: none;
   h1 { font-size: 2rem;}
   h2 { font-size: 1.4rem;}
   h3 { font-size: 1.3rem;}
+
+  .text-2xl {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .text-4vw { 
+    font-size: 6vw;
+    text-transform: uppercase;
+  }
   
 
-  .upper { font-size: 0.9rem; }
+  .upper { 
+    font-size: 1.4rem;
+    letter-spacing: 0;
+   }
   .text-big { font-size: 2.5rem; }
 
   .mob-padded-0 {
@@ -845,6 +866,13 @@ display: none;
     .slider-item p { font-size: 1.2rem;}
 
     .padded-20  { padding: 14rem;  }
+
+    .shape-drop-sm {
+      border-top-left-radius: 22rem;
+      border-top-right-radius: 22rem;
+      min-height: 48vh;
+      min-width: 75%;
+    }
 }
 
 @media(max-width: 36em) {
