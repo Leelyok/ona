@@ -357,6 +357,16 @@ margin-bottom: -5rem;
 .bg-epil {  background-image: url(/assets/EPILATION.jpg);}
 .bg-body {  background-image: url(/assets/BODY-CARE.jpg);}
 
+.bg-banner  { 
+  background-image: url(/assets/sand.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-position: 50% 70%;
+    background-size: cover;
+}
+
 .bg-hands {  
   background-image: url(/assets/2.jpg);
   background-size: cover;
