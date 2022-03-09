@@ -847,6 +847,7 @@ display: none;
 
   .text-4vw { 
     font-size: 6vw;
+    font-weight: normal;
     text-transform: uppercase;
   }
   
