@@ -84,10 +84,8 @@ body {
   opacity: 0.73; 
 }
 
-.bg-header     { 
-  background-color: #000;
-  opacity: 0.4; 
-}
+.bg-header     {   background-color: #000;}
+.overlay {  background-color: rgba(0,0,0,0.2); }
 
 .bg-yellow { background-color: #f9ba4e; }
 .bg-blue { background-color: #D4DFE5; }
@@ -399,7 +397,7 @@ margin-bottom: -5rem;
 
 header {    
   display: inline;
-  padding: 0% 0% 0% 1%;
+  padding: 0% 0% 0% 0%;
 }
 
 header nav a {
@@ -410,7 +408,7 @@ header nav a {
   padding: 0%;
   /*text-transform: uppercase;*/
 }
-nav a:hover {color: rgb(63,83,101); }
+nav a:hover {color: rgb(0, 0, 0); }
 
 header nav a, .inline a {
   display: inline-block;
@@ -650,7 +648,7 @@ hr.wide {
     /*left: -0.6rem; */
     padding: 0;
     display: none;
-    background-color: #9c8b75;
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 11;
     text-align: left;
     min-width: 11rem;
