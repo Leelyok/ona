@@ -7,6 +7,7 @@
     background-position: center;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    color: inherit;
 }
 
 html {  scroll-behavior: smooth;}
@@ -225,18 +226,16 @@ letter-spacing: -0.2vw;
 .big-number {  font-size: 3.5rem; }
 
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+a {  text-decoration: none;}
 
 nav a {
   text-decoration: none;
   padding: 1rem;
 }
 
-a:hover { color: #726452; }
+a:hover { color: #000; }
 
+/*
 .card:hover {
   box-shadow: 
   rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
@@ -431,9 +430,7 @@ header nav a, .inline a {
 
 header .logo {  width: 110px;}
 
-footer {
-    color: #1D1D1B;
-}
+footer {    color: #1D1D1B;}
 
 .small-footer {
   font-size: .6rem;
@@ -574,6 +571,7 @@ footer {
 .inline a p {
     display: block;
     padding: 0.6rem;
+    color: #000;
 }
 
 a.bg-image {  display: block;}
@@ -746,37 +744,74 @@ form button {
  /* Card Styles  */
  .card {
   padding-top: 1.5rem;
-  color: white;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   min-height: 500px;
   max-width: 95%;
 }
 
+/*
 .card:hover {
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
+  border: 20px solid rgba(0, 0, 0, 0.7);
+  transition: all .5s ease;
+  /*box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
 }
+*/
 
 .card h3 {
   font-size: 1.8rem;
-  color: #000;
 }
 
 .card img {
   margin-top: -2.5rem;
 }
 
+.hover-container {
+  background-size: cover;
+  background-position: center;
+}
+
+.hover-overlay {
+  position: relative;
+  padding-bottom: 100%;
+  color: #000;
+  /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+  transition: all 0.3s;
+}
+
+/*
+.hover-overlay::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+.hover-overlay > * {  position: relative;}
+*/
+
+.hover-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+
+/*
 #tv {
   position: relative;
-  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
-  box-shadow: 0 0 rgba(0,0,0,.15);
+  /*border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  /*box-shadow: 0 0 rgba(0,0,0,.15);
   transition: all .4s ease;
 }
 
 #tv:hover {
-  border-radius: 1% 1% 1% 1% / 1% 1% 1% 1%;
-  box-shadow: 10px -10px 10px 10px rgba(0,0,0,.5);
+  border: 20px solid rgba(0, 0, 0, 0.7);
+  /*border-radius: 0% 0% 0% 1% / 0% 0% 0% 1%;
+  /*box-shadow: 10px -10px 10px 10px rgba(0,0,0,.5);
 }
-
+*/
             
               
 /* Responsive video */
