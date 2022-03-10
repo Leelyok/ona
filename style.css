@@ -84,6 +84,11 @@ body {
   opacity: 0.73; 
 }
 
+.bg-header     { 
+  background-color: #000;
+  opacity: 0.4; 
+}
+
 .bg-yellow { background-color: #f9ba4e; }
 .bg-blue { background-color: #D4DFE5; }
 .bg-red { background-color: #c86757; }
@@ -362,9 +367,10 @@ margin-bottom: -5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
     background-position: 50% 70%;
     background-size: cover;
+    margin-top: -6rem;
 }
 
 .bg-hands {  
@@ -393,7 +399,6 @@ margin-bottom: -5rem;
 
 header {    
   display: inline;
-  background-color: #9c8b75;
   padding: 0% 0% 0% 1%;
 }
 
