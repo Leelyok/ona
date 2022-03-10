@@ -345,6 +345,9 @@ a:hover { color: #000; }
 /* Background Images */
 
 img { max-width: 100%; }
+svg { 
+  max-width: 10%;
+  color: #fff;  }
 
 .small-img {  max-width: 25%; }
 
