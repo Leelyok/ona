@@ -444,7 +444,7 @@ footer {    color: #1D1D1B;}
 
 .mobile-menu {
   display: none; 
-  background-color: #faf4ed;
+  background-color: #A58365;
   padding: 5%;
   position: fixed; 
   top:0;
@@ -531,7 +531,7 @@ footer {    color: #1D1D1B;}
     left:100vw;
     right: 0vw;
     bottom: 0;
-    background-color: #b1a690;
+    background-color: #A58365;
     padding:5px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 15;
@@ -882,6 +882,16 @@ display: none;
     background-color: #F2EEE9;
     background-repeat: no-repeat;
   }
+  .flex-flip-md { flex-direction: row-reverse; }
+  .flex-flip-col-md { flex-direction: column-reverse; }
+
+  .shape-drop-md {
+    border-top-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    min-height: 48vh;
+    min-width: 55%;
+  }
+
 }
 
 /* SM - max-width in pixels approximately 768px */
@@ -942,6 +952,8 @@ display: none;
       min-height: 48vh;
       min-width: 75%;
     }
+
+    .inline a {  font-size: 0.8rem;    }
 }
 
 @media(max-width: 36em) {
