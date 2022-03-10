@@ -85,7 +85,22 @@ body {
 }
 
 .bg-header     {   background-color: #000;}
-.overlay {  background-color: rgba(0,0,0,0.2); }
+.overlay01 {  background-color: rgba(0,0,0,0.1); }
+.overlay03 {  background-color: rgba(0,0,0,0.3); }
+.bg-overlay { position: relative; }
+.bg-overlay::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+	bottom: 0;
+	right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.bg-overlay > * {
+  position: relative;
+}
 
 .bg-yellow { background-color: #f9ba4e; }
 .bg-blue { background-color: #D4DFE5; }
@@ -191,8 +206,9 @@ p:last-child {
 .text-small {   font-size: 0.7rem;}
 .text-1r {   font-size: 1rem;}
 .text-4vw { 
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-transform: uppercase;
+  font-weight: normal;
 }
 .text-2xl {
   font-size: 1.9rem;
@@ -285,10 +301,10 @@ a:hover { color: #726452; }
   color: #2c2522;
 }
 
-.button:hover {
-  color: #726452;
-  border-color: #726452;
-}
+/*.button:hover {
+  color: #000;
+  border-color: #000;
+} */
 
 
 
@@ -316,9 +332,7 @@ a:hover { color: #726452; }
     --tw-text-opacity: 1;
     color: rgba(255,255,255,var(--tw-text-opacity));
   }
-  .text-center {
-    text-align: center;
-  }
+  
   .z-10 {
     z-index: 10;
   }
@@ -364,7 +378,7 @@ margin-bottom: -5rem;
   background-image: url(/assets/sand.jpg);
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*  align-items: center;  */
     min-height: 90vh;
     background-position: 50% 70%;
     background-size: cover;
@@ -648,7 +662,7 @@ hr.wide {
     /*left: -0.6rem; */
     padding: 0;
     display: none;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 11;
     text-align: left;
     min-width: 11rem;
