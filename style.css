@@ -806,6 +806,31 @@ form button {
   transition: all 0.3s;
 }
 
+.hover-overlay2 {
+  position: relative;
+  padding-bottom: 100%;
+  color: #fff;
+  /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+  transition: all 0.3s;
+}
+
+
+.hover-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.73);
+  color: white;
+}
+.hover-overlay2:hover {
+  background-color: rgba(0, 0, 0, 0.73);
+  color: white;
+}
+
+.hover-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 /*
 .hover-overlay::before {
   content: ""; 
@@ -820,17 +845,6 @@ form button {
 .hover-overlay > * {  position: relative;}
 */
 
-.hover-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.73);
-  color: white;
-}
-.hover-inner {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
 /*
 #tv {
