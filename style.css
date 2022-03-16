@@ -85,9 +85,9 @@ body {
   /*opacity: 0.73; */
 }
 
-.bg-header     {   background-color: #000;}
+.bg-cacao    {   background-color: #A58365;}
 .overlay01 {  background-color: rgba(0,0,0,0.1); }
-.overlay03 {  background-color: rgba(0,0,0,0.3); }
+.overlay03 {  background-color: rgba(0,0,0,0); }
 .bg-overlay { position: relative; }
 .bg-overlay::before {
   content: ""; 
@@ -397,7 +397,7 @@ margin-bottom: -5rem;
     min-height: 90vh;
     background-position: 50% 70%;
     background-size: cover;
-    margin-top: -7rem;
+    margin-top: -11rem;
 }
 
 .bg-hands {  
@@ -450,7 +450,7 @@ margin-bottom: -5rem;
 
 header {    
   display: inline;
-  padding: 0% 0% 0% 0%;
+  padding: 0% 0% 2% 3%;
 }
 
 header nav a {
