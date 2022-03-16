@@ -358,6 +358,14 @@ a:hover { color: #000; }
 /* Background Images */
 
 img { max-width: 100%; }
+.arrow-img {
+  object-fit: contain;
+  object-position: center;
+  width: 45px;
+  height: 45px;
+  margin-top: 3rem;
+}
+
 svg { 
   max-width: 10%;
   color: #fff;  }
@@ -394,7 +402,7 @@ margin-bottom: -5rem;
     display: flex;
     justify-content: center;
     /*  align-items: center;  */
-    min-height: 90vh;
+    min-height: 110vh;
     background-position: 50% 70%;
     background-size: cover;
     margin-top: -11rem;
@@ -995,7 +1003,7 @@ display: none;
   h3 { font-size: 1.3rem;}
 
   .text-2xl {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.7rem;
   }
 
