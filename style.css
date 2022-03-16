@@ -13,7 +13,7 @@
 html {  scroll-behavior: smooth;}
 
 body {
-  font-family: 'pragmatica-extralight', sans-serif;
+  font-family: 'pragmatica';
 }
 
 /*   Universal styles   */
@@ -42,6 +42,7 @@ body {
 .padded-l  { padding-left: 4%;    }
 .padded-r  { padding-right: 5%;   }
 .padded-r-10  { padding-right: 10%;   }
+.padded-t-10  { padding-top: 10%;   }
 .padded-r-20  { padding-right: 20%;   }
 .padded-ntb  { 
   padding-right: 5%;
@@ -67,6 +68,7 @@ body {
 .margin-t-2 {  margin-top: 2rem;}
 .margin-t-5 {  margin-top: 5%;}
 .margin-t-10 {  margin-top: 10rem;}
+.margin-t-15 {  margin-top: 15rem;}
 .margin-t-m7 { margin-top: -7rem; }
 .margin-t-m1 { margin-top: -1rem; }
 .m-t-m10 {  margin-top: -10rem;}
@@ -214,7 +216,7 @@ p:last-child {
   font-weight: normal;
 }
 .text-2xl {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   line-height: 2rem;
 }
 
@@ -471,6 +473,8 @@ margin-bottom: -5rem;
 header {    
   display: inline;
   padding: 0% 0% 2% 3%;
+  position: relative;
+  z-index: 3;
 }
 
 header nav a {
