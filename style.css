@@ -81,8 +81,8 @@ body {
 .bg-green     { background-color: #9b9b81;}
 .bg-black     { background-color: #414141;  }
 .bg-dark      { 
-  background-color: black;
-  opacity: 0.73; 
+  background-color: rgb(165,131,101);;
+  /*opacity: 0.73; */
 }
 
 .bg-header     {   background-color: #000;}
@@ -109,7 +109,7 @@ body {
 .bg-beige { background-color: #F5EFE8; }
 .bg-light2 { background-color: #f2efea }
 
-.bg-footer { background-color: #E6E0D0;}
+.bg-footer { background-color: rgb(165, 131, 101);}
 
 .text-white { color: #fff; } 
 .text-dark {  color: #443c31;}
@@ -828,7 +828,7 @@ form button {
 
 
 .hover-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.73);
+  background-color: rgb(165, 131, 101);
   color: white;
 }
 .hover-overlay2:hover {
