@@ -66,6 +66,7 @@ body {
 .margin-t-1 {  margin-top: 1rem;}
 .margin-t-2 {  margin-top: 2rem;}
 .margin-t-5 {  margin-top: 5%;}
+.margin-t-10 {  margin-top: 10rem;}
 .margin-t-m7 { margin-top: -7rem; }
 .margin-t-m1 { margin-top: -1rem; }
 .m-t-m10 {  margin-top: -10rem;}
@@ -74,6 +75,7 @@ body {
 
 .margin-b-1 { margin-bottom: 1rem;}
 .margin-b-2 { margin-bottom: 2rem;}
+.margin-b-5 { margin-bottom: 5rem;}
 
 
 .bg-light     { background-color: #f7f4ef; }
@@ -361,9 +363,9 @@ img { max-width: 100%; }
 .arrow-img {
   object-fit: contain;
   object-position: center;
-  width: 45px;
-  height: 45px;
-  margin-top: 3rem;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
 }
 
 svg { 
