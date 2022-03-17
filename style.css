@@ -280,7 +280,6 @@ a:hover { color: #000; }
   font-size: 1rem;
   margin: 1em 0;
   padding: .8rem 2rem;
-  text-transform: uppercase;
   color: #41414d;
   border: 2px solid #41414d;
     border-top-color: rgb(65, 65, 77);
@@ -293,8 +292,8 @@ a:hover { color: #000; }
 }
 
 .inverted.button, .white.button {
-  color: #fff;
-  border-color: #fff;
+  color: #A58365;
+  border-color: #A58365;
 }
 
 .button-tb {
@@ -502,6 +501,42 @@ margin-bottom: -5rem;
   background-color: #F2EEE9;
   background-repeat: no-repeat;
   min-height: 80vh;
+}
+
+.bg-epilation {
+  background-image: url(/assets/epilation-2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+.bg-epilation1 {
+  background-image: url(/assets/epilation-1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+.bg-epilation2 {
+  background-image: url(/assets/SKIN-CARE.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 90vh;
 }
 
 .bg-behind {
@@ -973,6 +1008,9 @@ form button {
   .bg-massage1 { min-height: 100vh;}
   .bg-facials { min-height: 100vh;}
   .bg-eyelash { min-height: 85vh;}
+  .bg-epilation { min-height: 175vh;}
+  .bg-epilation1 { min-height: 130vh;}
+  .bg-epilation2 { min-height: 75vh;}
 }
 
 @media (min-width: 1700px) {
@@ -982,6 +1020,9 @@ form button {
   .bg-massage1 { min-height: 60vh;}
   .bg-facials { min-height: 60vh;}
   .bg-eyelash { min-height: 50vh;}
+  .bg-epilation { min-height: 110vh;}
+  .bg-epilation1 { min-height: 80vh;}
+  .bg-epilation2 { min-height: 50vh;}
 }
 
 
