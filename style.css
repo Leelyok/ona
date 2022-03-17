@@ -379,7 +379,7 @@ svg {
 .bg-image {
   background-size: cover;
   background-position: center;
-  background-color: #F2EEE9;
+  background-color: #FFF;
   background-repeat: no-repeat;
   opacity: 1;
   transition: opacity 1s;
@@ -446,6 +446,30 @@ margin-bottom: -5rem;
 
 .bg-hair-services {
   background-image: url(/assets/hair2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+.bg-massage {
+  background-image: url(/assets/massage3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+.bg-massage1 {
+  background-image: url(/assets/massage2.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -920,19 +944,18 @@ form button {
 
 @media (min-width: 1500px) {
   .bg-add-ons { min-height: 140vh;}
+  .bg-hair-services { min-height: 140vh;}
+  .bg-massage { min-height: 100vh;}
+  .bg-massage1 { min-height: 100vh;}
 }
 
 @media (min-width: 1700px) {
   .bg-add-ons { min-height: 90vh;}
-}
-
-@media (min-width: 1500px) {
-  .bg-hair-services { min-height: 140vh;}
-}
-
-@media (min-width: 1700px) {
   .bg-hair-services { min-height: 90vh;}
+  .bg-massage { min-height: 60vh;}
+  .bg-massage1 { min-height: 60vh;}
 }
+
 
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
