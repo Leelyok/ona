@@ -480,6 +480,30 @@ margin-bottom: -5rem;
   min-height: 80vh;
 }
 
+.bg-facials {
+  background-image: url(/assets/facials.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+.bg-eyelash {
+  background-image: url(/assets/eyelash.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
 .bg-behind {
   background-image: url(/assets/6.jpg);
   background-size: cover;
@@ -947,6 +971,8 @@ form button {
   .bg-hair-services { min-height: 140vh;}
   .bg-massage { min-height: 100vh;}
   .bg-massage1 { min-height: 100vh;}
+  .bg-facials { min-height: 100vh;}
+  .bg-eyelash { min-height: 85vh;}
 }
 
 @media (min-width: 1700px) {
@@ -954,6 +980,8 @@ form button {
   .bg-hair-services { min-height: 90vh;}
   .bg-massage { min-height: 60vh;}
   .bg-massage1 { min-height: 60vh;}
+  .bg-facials { min-height: 60vh;}
+  .bg-eyelash { min-height: 50vh;}
 }
 
 
