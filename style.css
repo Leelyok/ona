@@ -445,7 +445,7 @@ margin-bottom: -5rem;
 }
 
 .bg-hair-services {
-  background-image: url(/assets/HAIR-CARE.jpg);
+  background-image: url(/assets/hair2.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -453,7 +453,7 @@ margin-bottom: -5rem;
   align-items: flex-end;
   background-color: #F2EEE9;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 .bg-behind {
