@@ -89,6 +89,12 @@ body {
   /*opacity: 0.73; */
 }
 
+.bg-black-section {
+    background-color: #000;
+    min-height: 40vh;
+    margin-top: -20rem;
+}
+
 .bg-cacao    {   background-color: #A58365;}
 .overlay01 {  background-color: rgba(0,0,0,0.3); }
 .overlay03 {  background-color: rgba(0,0,0,0); }
@@ -610,6 +616,29 @@ footer {    color: #1D1D1B;}
   font-weight: normal;
   font-size: 1.5rem;
  }
+ 
+ .hamburger-button {
+    cursor: pointer;
+    padding: 1.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 0.8;
+    position: fixed;
+    right: 1rem;
+    top: 0rem;
+    z-index: 4;
+ }
+ 
+ .hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+ }
+
+.hamburger-button.active {
+    color: #fff;
+  }
+
 
  /*   BURGER MENU  */
 .menu-p{
@@ -1003,7 +1032,7 @@ form button {
 
 @media (min-width: 1500px) {
   .bg-add-ons { min-height: 140vh;}
-  .bg-hair-services { min-height: 140vh;}
+  .bg-hair-services { min-height: 115vh;}
   .bg-massage { min-height: 100vh;}
   .bg-massage1 { min-height: 100vh;}
   .bg-facials { min-height: 100vh;}

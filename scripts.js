@@ -16,7 +16,20 @@ $(".burger-menu").click(function(){
     $(".burger-menu").toggleClass("active");
   });
 
+  // Document . ready
+$(document).ready(function() {
+  $('.hamburger-button').click(function(){
+      $('.mobile-menu').fadeToggle(100);
+      $(this).toggleClass('active');
+    });
+  
+    $('.mobile-menu a').click(function(){
+      $('.mobile-menu').fadeOut(100);
+      $(".hamburger-button").removeClass('active');
+    });
 
+  });
+  
   /*
     $('.hamburger-button').click(function(){
         $('.mobile-menu').fadeToggle(100);
