@@ -69,6 +69,7 @@ body {
 .margin-t-5 {  margin-top: 5%;}
 .margin-t-10 {  margin-top: 10rem;}
 .margin-t-15 {  margin-top: 15rem;}
+.margin-t-20 {  margin-top: 20rem;}
 .margin-t-m7 { margin-top: -7rem; }
 .margin-t-m1 { margin-top: -1rem; }
 .m-t-m10 {  margin-top: -10rem;}
@@ -77,6 +78,7 @@ body {
 
 .margin-b-1 { margin-bottom: 1rem;}
 .margin-b-2 { margin-bottom: 2rem;}
+.margin-b-3 { margin-bottom: 3rem;}
 .margin-b-5 { margin-bottom: 5rem;}
 
 
@@ -216,6 +218,7 @@ p:last-child {
 .text-normal  { font-weight: normal;}
 .text-small {   font-size: 0.7rem;}
 .text-1r {   font-size: 1rem;}
+.text-xs {   font-size: 0.9rem;}
 .text-4vw { 
   font-size: 3.5vw;
   text-transform: uppercase;
@@ -1134,6 +1137,8 @@ display: none;
     font-size: 1.1rem;
     line-height: 1.7rem;
   }
+
+  .text-xs {    font-size: 0.65rem;  }
 
   .text-4vw { 
     font-size: 6vw;
