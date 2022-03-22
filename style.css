@@ -1058,6 +1058,93 @@ form button {
 }
 
 
+/*   ACODIONS  */
+
+.mx-1100{
+  /*max-width: 1100px; */
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 100px 15px;
+}
+
+.accordion-item {margin-bottom: 15px;}
+.accordion-trigger {
+  background-color: #000; 
+  color: #FFF; 
+  cursor: pointer; 
+  padding: 15px; 
+  position: relative;
+}
+.accordion-trigger::after{
+  font-family: 'FontAwesome'; 
+  content: "\f067"; 
+  font-size: 20px; 
+  color: #FFF; 
+  position: absolute; 
+  right: 15px;
+}
+.accordion-trigger.accordion-open::after{content: "\f068";}
+.accordion-collapse {
+  background-color: #FFF; 
+  color: #000; 
+  display: none; 
+  padding: 15px; 
+  border: 1px solid #000;
+}
+
+/*
+.accordion__icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+
+
+.accordion__icon .line-01,
+.accordion__icon .line-02 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 2px;
+  background-color: #272343;
+  transition: 0.3s;
+}
+
+.accordion__icon .line-02 {
+  transform: rotate(90deg);
+}
+
+
+.accordion--open > .accordion__title .line-02 {
+  transform: rotate(0deg);
+}
+/* end Required CSS */
+
+main .jumbotron{
+  background-color: #000;
+  padding: 1.5em 5em;
+  color: #FFF;
+}
+main .jumbotron h1{
+  font-size: 3em;
+  margin: 0;
+}
+main .container{
+  padding: 1.5em 5em;
+}
+@media (max-width: 480px){
+  main{
+    font-size: 12px;
+  }
+  main .jumbotron, main .container{
+    padding: 1.5em 2em;
+  }
+}
+
+/*  END of ACORDION  */
+
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
 .show-xs, 
