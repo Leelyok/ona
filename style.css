@@ -954,7 +954,7 @@ form button {
   padding-bottom: 100%;
   color: #000;
   /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
-  transition: all 0.3s;
+  transition: all 1s;
 }
 
 .hover-overlay2 {
@@ -962,7 +962,7 @@ form button {
   padding-bottom: 100%;
   color: #fff;
   /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
-  transition: all 0.3s;
+  transition: all 1s;
 }
 
 
