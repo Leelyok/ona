@@ -466,7 +466,7 @@ margin-bottom: -5rem;
   align-items: flex-end;
   background-color: #F2EEE9;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 50vh;
 }
 
 .bg-hair-services {
@@ -1084,7 +1084,7 @@ form button {
   /*max-width: 1100px; */
   width: 100%; 
   margin: 0 auto; 
-  padding: 100px 15px;
+  padding: 50px 15px;
 }
 
 .accordion-item {margin-bottom: 15px;}
@@ -1186,6 +1186,7 @@ display: none;
   .md-tall-60 {  min-height: 60vh;}
   .md-tall-50 {  min-height: 50vh;}
   .md-tall-33 {  min-height: 33vh;}
+  .md-tall-20 {  min-height: 20vh;}
   
 
   .emphasis { font-size: 1rem; }
