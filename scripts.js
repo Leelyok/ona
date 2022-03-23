@@ -58,8 +58,8 @@ $.fn.accordion = function() {
   const trigger = $(this).find('.accordion-trigger');
   const collapse = $(this).find('.accordion-collapse');
 
-  $(trigger).first().addClass('accordion-open');
-  $(collapse).first().show();
+ // $(trigger).first().addClass('accordion-open');
+ // $(collapse).first().show();
 
   $(trigger).each(function(){
     $(this).on('click', function(){
