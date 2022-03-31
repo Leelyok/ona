@@ -13,7 +13,8 @@
 html {  scroll-behavior: smooth;}
 
 body {
-  font-family: 'pragmatica';
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'pragmatica';*/
 }
 
 /*   Universal styles   */
@@ -139,6 +140,8 @@ body {
 .text-dark {  color: #443c31;}
 .text-tan   { color: #9c8b75  }
 .black {  color: #000;}
+.text-cacao { color: #A58365; } 
+
 
 .subtle {    
     opacity: 0.9;
@@ -240,7 +243,7 @@ p:last-child {
 .text-normal  { font-weight: normal;}
 .text-small {   font-size: 0.7rem;}
 .text-1r {   font-size: 1rem;}
-.text-xs {   font-size: 0.9rem;}
+.text-xs {   font-size: 1.05rem;}
 .text-4vw { 
   font-size: 3.5vw;
   text-transform: uppercase;
@@ -281,7 +284,7 @@ nav a {
   padding: 1rem;
 }
 
-a:hover { color: #000; }
+a:hover { color: #A58365; }
 
 /*
 .card:hover {
@@ -595,7 +598,7 @@ header nav a {
   text-decoration: none;
   color: #000;
   letter-spacing: 0.1rem;
-  font-weight: 400;
+  font-weight: 300;
   padding: 0%;
   /*text-transform: uppercase;*/
 }
@@ -864,7 +867,7 @@ hr.wide {
     /*left: -0.6rem; */
     padding: 0;
     display: none;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(249, 246, 246, 0.3);
     z-index: 11;
     text-align: left;
     min-width: 11rem;
