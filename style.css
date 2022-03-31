@@ -1063,7 +1063,7 @@ form button {
 
 @media (min-width: 1500px) {
   .bg-add-ons { min-height: 140vh;}
-  .bg-hair-services { min-height: 115vh;}
+ /* .bg-hair-services { min-height: 115vh;}  */
   .bg-massage { min-height: 100vh;}
   .bg-massage1 { min-height: 100vh;}
   .bg-facials { min-height: 100vh;}
