@@ -436,10 +436,10 @@ margin-bottom: -5rem;
     display: flex;
     justify-content: center;
     /*  align-items: center;  */
-    min-height: 110vh;
+    min-height: 80vh;
     background-position: 50% 70%;
     background-size: cover;
-    margin-top: -11rem;
+   /* margin-top: -11rem;*/
 }
 .bg-banner1  { 
   background-image: url(/assets/duna.jpg);
@@ -586,14 +586,14 @@ margin-bottom: -5rem;
 
 header {    
   display: inline;
-  padding: 0% 0% 2% 3%;
+  padding: 0% 0% 0% 3%;
   position: relative;
   z-index: 3;
 }
 
 header nav a {
   text-decoration: none;
-  color: white;
+  color: #000;
   letter-spacing: 0.1rem;
   font-weight: 400;
   padding: 0%;
