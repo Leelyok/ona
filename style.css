@@ -244,6 +244,7 @@ p:last-child {
 .text-small {   font-size: 0.7rem;}
 .text-1r {   font-size: 1rem;}
 .text-xs {   font-size: 1.05rem;}
+.text-xxs {   font-size: 0.8rem;}
 .text-4vw { 
   font-size: 3.5vw;
   text-transform: uppercase;
@@ -267,7 +268,7 @@ letter-spacing: -0.2vw;
 .price { 
     display: block;
     font-weight: 400;
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
     text-align: right;
 }
 .menu p {
@@ -1265,7 +1266,7 @@ display: none;
 
   .title-text {   font-size: 1rem;  }
   .title-text1 {   font-size: 1rem;  }
-  
+  .text-xxs {   font-size: 0.7rem;}
 
   .upper { 
     font-size: 1.4rem;
