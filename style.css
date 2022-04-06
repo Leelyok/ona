@@ -13,7 +13,7 @@
 html {  scroll-behavior: smooth;}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   /*font-family: 'pragmatica';*/
 }
 
@@ -760,7 +760,6 @@ footer {    color: #1D1D1B;}
   color: #C3BFBC;
   color: #356a55;
   color: white;
-  font-family: 'Mazzard Soft', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   display:block;
