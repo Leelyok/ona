@@ -490,6 +490,30 @@ margin-bottom: -5rem;
   min-height: 80vh;
 }
 
+.bg-hair-services1 {
+  background-image: url(/assets/4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+.bg-hair-services2 {
+  background-image: url(/assets/HAIR-CARE.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
 .bg-massage {
   background-image: url(/assets/massage3.jpg);
   background-size: cover;

@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Eastman Alternate';
-    src: local('Eastman Alternate Regular'), local('Eastman-Alternate-Regular'),
-        url('EastmanAlternate-Regular.woff2') format('woff2'),
-        url('EastmanAlternate-Regular.woff') format('woff'),
-        url('EastmanAlternate-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
