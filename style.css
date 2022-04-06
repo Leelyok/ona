@@ -373,9 +373,10 @@ a:hover { color: #A58365; }
     max-width: 100%;
     height: auto;
   }
-  audio, canvas, embed, iframe, img, object, svg, video {
+  /*audio, canvas, embed, iframe, img, object, svg, video {
     display: block;
   }
+  */
 
 
    .text-white {
@@ -635,6 +636,20 @@ header nav a, .inline a {
 }
 
 header .logo {  width: 110px;}
+
+header .border-bottom {
+  border-bottom: 1px solid rgb(220,220,220);
+}
+
+.nav-header {
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 100vw;
+  background-color: white;
+  top: 0;
+}
 
 footer {    color: #1D1D1B;}
 
