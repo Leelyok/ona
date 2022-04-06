@@ -482,7 +482,7 @@ margin-bottom: -5rem;
 .bg-hands2 {  
   background-image: url(/assets/2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: flex-end;
