@@ -467,6 +467,29 @@ margin-bottom: -5rem;
   background-position: 50% 14%;
 }
 
+.bg-nailcare {  
+  background-image: url(/assets/NAIL-CARE.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+}
+
+.bg-hands2 {  
+  background-image: url(/assets/2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+}
 
 .bg-add-ons {
   background-image: url(/assets/7.png);
