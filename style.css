@@ -599,7 +599,7 @@ margin-bottom: -5rem;
   align-items: flex-end;
   background-color: #F2EEE9;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 .bg-epilation1 {
@@ -1134,9 +1134,9 @@ form button {
   .bg-massage1 { min-height: 100vh;}
   .bg-facials { min-height: 100vh;}
   .bg-eyelash { min-height: 85vh;}
-  .bg-epilation { min-height: 175vh;}
+  .bg-epilation { min-height: 120vh;}
   .bg-epilation1 { min-height: 130vh;}
-  .bg-epilation2 { min-height: 75vh;}
+  .bg-epilation2 { min-height: 80vh;}
 }
 
 @media (min-width: 1700px) {
