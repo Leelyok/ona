@@ -26,7 +26,7 @@ body {
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
 
-
+.padded-0 { padding: 0;  }
 .padded      { padding: 5%;    }
 .padded-10pr   { padding: 10%;    }
 .padded-2p   { padding: 2%;    }
@@ -1340,6 +1340,7 @@ display: none;
       padding-left: 0;
       padding-right: 0;
     }
+  .mob-pad-0 { padding: 0;  }
 
   .logo-img {
       top: 0;
