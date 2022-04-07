@@ -1465,6 +1465,8 @@ display: none;
     .bg-massage1 { min-height: 60vh;}
     .bg-eyelash { min-height: 50vh;}
     .bg-hair-services { min-height: 60vh;}
+    .bg-hair-services1 { min-height: 60vh;}
+    .bg-hair-services2 { min-height: 60vh;}
 }
 
 @media(max-width: 36em) {
