@@ -1462,6 +1462,8 @@ display: none;
     .inline a {  font-size: 0.8rem;    }
     .bg-facials { min-height: 60vh;}
     .bg-massage { min-height: 60vh;}
+    .bg-massage1 { min-height: 60vh;}
+    .bg-eyelash { min-height: 50vh;}
 }
 
 @media(max-width: 36em) {
