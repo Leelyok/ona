@@ -17,6 +17,26 @@ $(".burger-menu").click(function(){
   });
 
   // Document . ready
+
+  $(document).ready(function() {
+    //make sure the page is ready befor running the scripts
+    // This is the hamburger menu
+    $(".hamburger-button").click(function(){
+  
+      $(this).toggleClass('active');
+      $(".mobile-menu").fadeToggle();
+  
+    });
+    $(".mobile-menu a").click(function(){
+  
+      $(".hamburger-button").toggleClass('active');
+      $(".mobile-menu").fadeToggle();
+  
+    });
+  });
+    // end hamburger menu
+
+    /*
 $(document).ready(function() {
   $('.hamburger-button').click(function(){
       $('.mobile-menu').fadeToggle(100);

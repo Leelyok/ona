@@ -700,7 +700,7 @@ footer {    color: #1D1D1B;}
   background-color: #A58365;
   padding: 5%;
   position: fixed; 
-  transition: 1s;
+ /* transition: 1s; */
   top:0;
   bottom: 0;
   left: 1100px;;
