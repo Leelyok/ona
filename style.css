@@ -17,6 +17,10 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  font-weight: 200;
+  color: black;
   /*font-family: 'pragmatica';*/
 }
 
