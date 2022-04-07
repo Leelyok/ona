@@ -1460,6 +1460,7 @@ display: none;
     }
 
     .inline a {  font-size: 0.8rem;    }
+    .bg-facials { min-height: 60vh;}
 }
 
 @media(max-width: 36em) {
