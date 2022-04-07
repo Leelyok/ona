@@ -699,7 +699,7 @@ footer {    color: #1D1D1B;}
   transition: 1s;
   top:0;
   bottom: 0;
-  left:0;
+  left: 1100px;;
   right:0;
   text-align: left;
   z-index: 3;
@@ -738,6 +738,7 @@ footer {    color: #1D1D1B;}
     color: #000;
   }
 
+  .border-menu2 {    border-bottom: 0.01rem solid white;  }
 
  /*   BURGER MENU  */
 .menu-p{
