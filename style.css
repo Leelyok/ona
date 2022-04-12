@@ -724,6 +724,12 @@ footer {    color: #1D1D1B;}
  }
  
  .hamburger-button {
+  position: fixed;
+  top: 5vh;
+  right: 2vh;
+  z-index: 20;
+  padding: 8px;
+  /*
     cursor: pointer;
     color: #A58365;
     padding: 1.5rem;
@@ -735,15 +741,63 @@ footer {    color: #1D1D1B;}
     right: 1rem;
     top: 0rem;
     z-index: 4;
+    */
  }
+ 
+ .hamburger-button span {
+  width: 40px;
+  border: 1px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+  z-index: 20;
+}
+
+.burger-top {
+  top: -02px;
+}
+.burger-top, .burger-bottom {
+  position: absolute;
+}
+
+.burger-bottom {
+  bottom: -02px;
+}
+.burger-top, .burger-bottom {
+  position: absolute;
+}
+
+/* make sure this has the same top as the burger button has padding*/
+.hamburger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.hamburger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.hamburger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
  
  .hamburger-button i {
     font-size: 2.2rem;
     margin-bottom: 0;
  }
 
-.hamburger-button.active {
-    color: #000;
+.hamburger-button.active span{
+    border-color: #000;
+    background-color: #000;
   }
 
   .border-menu2 {    border-bottom: 0.01rem solid white;  }
