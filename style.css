@@ -772,11 +772,11 @@ footer {    color: #1D1D1B;}
 .hamburger-button.active .burger-top{
   position: absolute;
   top: 8px;
-  transform: rotateZ(45deg);
+  transform: rotateZ(30deg);
 }
 
 .hamburger-button.active .burger-middle{
-/*   transform: rotateZ(270deg); */
+  transform: rotateZ(270deg);
   border-color: rgba(0,0,0,0);
   background-color:rgba(0,0,0,0);
 }
@@ -786,7 +786,7 @@ footer {    color: #1D1D1B;}
 .hamburger-button.active .burger-bottom{
   position: absolute;
   bottom: 8px;
-  transform: rotateZ(-45deg);
+  transform: rotateZ(-15deg);
 }
 
  
