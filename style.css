@@ -701,8 +701,12 @@ header .border-bottom {
   overflow: hidden;
   transition: 0.5s;
   width: 100vw;
-  background-color: white;
   top: 0;
+}
+
+.nav-header-hidden {
+  -ms-transform: translateY(-100%) !important;
+  transform: translateY(-100%) !important; 
 }
 
 footer {    color: #1D1D1B;}
@@ -746,7 +750,7 @@ footer {    color: #1D1D1B;}
   position: fixed;
   top: 5vh;
   right: 2vh;
-  z-index: 20;
+  z-index: 1002;
   padding: 8px;
   /*
     cursor: pointer;

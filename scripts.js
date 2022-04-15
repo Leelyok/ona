@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 });
 
-// ACORDONS
+// ACCORDIONS
 
 $.fn.accordion = function() {
   const trigger = $(this).find('.accordion-trigger');
@@ -137,4 +137,24 @@ $(".testimonial-slider-container").slick({
             dots: true
         }
     }]
+});
+
+// Menu auto-hide
+
+let previousOffset = 0;
+
+$(window).scroll(function() {
+    const currentOffset = window.scrollY;
+
+    if ($(".burger-button").hasClass("active"))
+        return;
+
+    if (currentOffset <= 0)
+        $(".nav-header").toggleClass("nav-header-hidden", false);
+    else if (currentOffset > previousOffset)
+        $(".nav-header").toggleClass("nav-header-hidden", true);
+    else if (currentOffset < previousOffset)
+        $(".nav-header").toggleClass("nav-header-hidden", false);
+
+    previousOffset = currentOffset;
 });
