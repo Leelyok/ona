@@ -1298,6 +1298,16 @@ form button {
   height: 100%;
 }
 
+/* Responsive MAP */
+.embed-container1 {
+  position: relative;
+  padding-bottom: 30%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
 @media (min-width: 1500px) {
   .bg-add-ons { min-height: 140vh;}
  /* .bg-hair-services { min-height: 115vh;}  */
