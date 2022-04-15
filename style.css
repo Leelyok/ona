@@ -119,7 +119,7 @@ body {
 }
 
 .bg-cacao    {   background-color: #A58365;}
-.overlay01 {  background-color: rgba(0,0,0,0.3); }
+.overlay01 {  background-color: rgba(0,0,0,0.2); }
 .overlay03 {  background-color: rgba(0,0,0,0); }
 .bg-overlay { position: relative; }
 .bg-overlay::before {
