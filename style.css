@@ -1281,7 +1281,7 @@ form button {
 /* Responsive video */
 .embed-container {
   position: relative;
-  padding-bottom: 45%;
+  padding-bottom: 55%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
