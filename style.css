@@ -372,7 +372,14 @@ a:hover { color: #A58365; }
   border-color: #000;
 } */
 
-
+.button-white {
+  background-color: #fff;
+  border: 10px solid rgba(248, 248, 248, 0.2);
+  border-radius: 100%;
+  font-size: 1rem;
+  margin: 1em 0;
+  padding: .8rem 2rem;
+}
 
 /*  video section  */
 
@@ -1269,7 +1276,7 @@ form button {
 /* Responsive video */
 .embed-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 33%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
