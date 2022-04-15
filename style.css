@@ -1094,7 +1094,7 @@ hr.wide {
     /*left: -0.6rem; */
     padding: 0;
     display: none;
-    background: linear-gradient(0, rgba(248,248,248,0), rgba(248, 248, 248,0.6));
+    background: radial-gradient(rgba(248,248,248,0.6), rgba(248, 248, 248,0));
     /*background-color: rgba(249, 246, 246, 0.3);*/
     z-index: 11;
     text-align: left;
