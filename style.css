@@ -1478,6 +1478,10 @@ display: none;
     background-clip: padding-box;
     background-color: white;
   }
+
+  .text-xs {
+    font-size: 0.8rem;
+  }
 }
 
 /* SM - max-width in pixels approximately 768px */
