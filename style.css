@@ -301,7 +301,7 @@ nav a {
   padding: 1rem;
 }
 
-a:hover { color: #A58365; }
+/*a:hover { color: #A58365; } */
 
 /*
 .card:hover {
@@ -472,7 +472,7 @@ margin-bottom: -5rem;
     min-height: 85vh;
     background-position: 50% 70%;
     background-size: cover;
-   margin-top: -8rem;
+   margin-top: -10rem;
 }
 .bg-banner1  { 
   background-image: url(/assets/duna.jpg);
@@ -687,7 +687,7 @@ header nav a, .inline a {
   padding: 0.8rem;
 }
 
-header .logo {  width: 110px;}
+header .logo {  width: 115px;}
 
 /*
 header .border-bottom {
@@ -1433,6 +1433,7 @@ display: none;
   .md-tall-33 {  min-height: 33vh;}
   .md-tall-20 {  min-height: 20vh;}
   
+  .padded-md { padding: 5%;}
 
   .emphasis { font-size: 1rem; }
   
@@ -1467,6 +1468,16 @@ display: none;
     min-width: 55%;
   }
 
+  .text-1r {   font-size: 0.8rem;}
+  .button-white {
+    display:block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 13px solid rgba(248,248,248,0.3);
+    background-clip: padding-box;
+    background-color: white;
+  }
 }
 
 /* SM - max-width in pixels approximately 768px */
