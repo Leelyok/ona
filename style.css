@@ -46,6 +46,7 @@ body {
 
 
 .padded-t  { padding-top: 5%;     }
+.padded-t1 { padding-top: 1%; }
 .padded-b  { padding-bottom: 5%;  }
 .padded-l  { padding-left: 4%;    }
 .padded-r  { padding-right: 5%;   }
@@ -134,6 +135,10 @@ body {
 .bg-overlay > * {
   position: relative;
 }
+
+.bg-overlay-gradient::before { 
+  background: linear-gradient(0, rgba(248,248,248,0), rgba(248,248,248,1));
+} 
 
 .bg-yellow { background-color: #f9ba4e; }
 .bg-blue { background-color: #D4DFE5; }
@@ -650,7 +655,7 @@ margin-bottom: -5rem;
 
 header {    
   display: inline;
-  padding: 0% 0% 0% 3%;
+ /* padding: 0 0% 0% 3%;*/
   position: relative;
   z-index: 3;
 }
@@ -1089,7 +1094,8 @@ hr.wide {
     /*left: -0.6rem; */
     padding: 0;
     display: none;
-    background-color: rgba(249, 246, 246, 0.3);
+    background: linear-gradient(0, rgba(248,248,248,0), rgba(248, 248, 248,0.6));
+    /*background-color: rgba(249, 246, 246, 0.3);*/
     z-index: 11;
     text-align: left;
     min-width: 11rem;
