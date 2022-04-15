@@ -373,12 +373,17 @@ a:hover { color: #A58365; }
 } */
 
 .button-white {
-  background-color: #fff;
-  border: 10px solid rgba(248, 248, 248, 0.2);
-  border-radius: 100%;
-  font-size: 1rem;
-  margin: 1em 0;
-  padding: .8rem 2rem;
+  display:block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 13px solid rgba(248,248,248,0.3);
+  background-clip: padding-box;
+  background-color: white;
+}
+
+.button-white a:hover {
+  color: black
 }
 
 /*  video section  */
