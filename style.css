@@ -469,7 +469,7 @@ margin-bottom: -5rem;
     display: flex;
     justify-content: center;
     /*  align-items: center;  */
-    min-height: 85vh;
+    min-height: 100vh;
     background-position: 50% 70%;
     background-size: cover;
    margin-top: -10rem;
