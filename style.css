@@ -252,7 +252,10 @@ p:last-child {
 .text-bold  { font-weight: bold;}
 .text-normal  { font-weight: normal;}
 .text-small {   font-size: 0.7rem;}
-.text-1r {   font-size: 1rem;}
+.text-1r {   
+  font-size: 1rem;
+  font-weight: 300;
+}
 .text-xs {   font-size: 1.05rem;}
 .text-xxs {   font-size: 0.8rem;}
 .text-4vw { 
@@ -1207,6 +1210,7 @@ form button {
 
 .card h3 {
   font-size: 1.8rem;
+  font-weight: 300;
 }
 
 .card img {
@@ -1482,7 +1486,8 @@ display: none;
     min-width: 55%;
   }
 
-  .text-1r {   font-size: 0.8rem;}
+  .text-1r {   
+    font-size: 0.8rem;}
   .button-white {
     display:block;
     height: 80px;
