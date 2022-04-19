@@ -694,7 +694,7 @@ header nav a, .inline a {
   padding: 0.8rem;
 }
 
-header .logo {  width: 115px;}
+header .logo {  width: 120px;}
 
 /*
 header .border-bottom {
@@ -1505,6 +1505,11 @@ display: none;
   .text-xs {
     font-size: 0.8rem;
   }
+
+  .embed-container1 {
+    padding-bottom: 70%;
+  }
+
 }
 
 /* SM - max-width in pixels approximately 768px */
@@ -1512,7 +1517,8 @@ display: none;
 
   .hide-sm { display: none;  }
   .show-sm {  display: block; }
-
+  
+  header .logo {  width: 105px;}
   .center-sm { text-align: center; }
 
   .flex-flip-sm { flex-direction: row-reverse; }
@@ -1556,6 +1562,7 @@ display: none;
       padding-right: 0;
     }
   .mob-pad-0 { padding: 0;  }
+  .sm-padded-t2 { padding-top: 2%;}
 
   .logo-img {
       top: 0;
