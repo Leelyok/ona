@@ -189,11 +189,7 @@ body {
 }
 
 .upper {
-  font-size: 2.5rem;
-  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  word-spacing: 0.2rem;
 }
 
 .lower {
