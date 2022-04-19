@@ -184,6 +184,10 @@ body {
   z-index: 1;
 }
 
+.text-trigger {
+  font-size: 1.3rem;
+}
+
 .text-eastman {
   font-family: 'Eastman Alternate';
 }
@@ -1463,6 +1467,9 @@ display: none;
   .padded-10 { padding: 1rem;}
    
   .title-text {   font-size: 1.5rem;  }
+
+  .text-trigger {  font-size: 1.3rem;  }
+
   .md-tall-50 {  min-height: 50vh;}
 
   .card h3 {   font-size: 1.5rem;  }
@@ -1543,14 +1550,12 @@ display: none;
     font-size: 6vw;
   }
 
+  .text-trigger {  font-size: 1.2rem;  }
+
   .title-text {   font-size: 1rem;  }
   .title-text1 {   font-size: 1rem;  }
   .text-xxs {   font-size: 0.7rem;}
 
-  .upper { 
-    font-size: 1.4rem;
-    letter-spacing: 0;
-   }
   .text-big { font-size: 2.5rem; }
 
   .mob-padded-0 {
@@ -1591,7 +1596,7 @@ display: none;
 @media(max-width: 36em) {
 
   h1 { font-size: 1.3rem;}
-  h3 { font-size: 1.1rem;}
+  h3 { font-size: 1.2rem;}
   .title-text {   font-size: 0.9rem;  }
   .title-text1 {   font-size: 0.9rem;  }
 }
