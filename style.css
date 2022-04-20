@@ -52,12 +52,14 @@ body {
 .padded-t1 { padding-top: 1%; }
 .padded-b  { padding-bottom: 5%;  }
 .padded-l  { padding-left: 4%;    }
+.padded-l1  { padding-left: 1%;    }
+.padded-l2  { padding-left: 2%;    }
 .padded-r  { padding-right: 5%;   }
 .padded-r-10  { padding-right: 10%;   }
 .padded-t-10  { padding-top: 10%;   }
 .padded-r-20  { padding-right: 20%;   }
 .padded-ntb  { 
-  padding-right: 5%;
+  padding-right: 7%;
   padding-left: 5%; 
 }
 .padded-tb  { 
@@ -154,7 +156,7 @@ body {
 .text-white { 
   font-family: 'Inter', sans-serif;
   color: #fff;
-  font-weight: 300;
+  font-weight: 200;
  } 
 
 .text-dark {  color: #443c31;}
@@ -274,7 +276,7 @@ p:last-child {
 }
 .text-xs {   
   font-size: 1.05rem;
-  font-weight: 300;
+  font-weight: 200;
   color: #fff;
 }
 
@@ -488,7 +490,7 @@ margin-bottom: -5rem;
     justify-content: center;
     /*  align-items: center;  */
     min-height: 100vh;
-    background-position: 50% 70%;
+    background-position: 50% 50%;
     background-size: cover;
    margin-top: -10rem;
 }
