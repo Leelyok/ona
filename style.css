@@ -260,7 +260,12 @@ p:last-child {
   font-size: 1rem;
   font-weight: 300;
 }
-.text-xs {   font-size: 1.05rem;}
+.text-xs {   
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.text-300 {  font-weight: 300; }
 .text-xxs {   font-size: 0.8rem;}
 .text-4vw { 
   font-size: 3.5vw;
