@@ -1465,6 +1465,7 @@ display: none;
   .md-tall-80 {  min-height: 80vh;}
   .md-tall-70 {  min-height: 70vh;}
   .md-tall-60 {  min-height: 60vh;}
+  .md-tall-65 {  min-height: 65vh;}
   .md-tall-50 {  min-height: 50vh;}
   .md-tall-55 {  min-height: 55vh;}
   .md-tall-33 {  min-height: 33vh;}
@@ -1540,7 +1541,7 @@ display: none;
   .center-sm { text-align: center; }
   .bg-banner {
     background-attachment: initial;
-    background-position: top;
+    background-position: 80% 50%;
     margin-top: -4rem;
   }
 
