@@ -493,6 +493,7 @@ margin-bottom: -5rem;
     background-position: 50% 50%;
     background-size: cover;
    margin-top: -10rem;
+   background-attachment: fixed;
 }
 .bg-banner1  { 
   background-image: url(/assets/duna.jpg);
@@ -1536,6 +1537,9 @@ display: none;
   
   header .logo {  width: 105px;}
   .center-sm { text-align: center; }
+  .bg-banner {
+    background-attachment: initial;
+  }
 
   .flex-flip-sm { flex-direction: row-reverse; }
   .flex-flip-col-sm { flex-direction: column-reverse; }
