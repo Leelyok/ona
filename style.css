@@ -1504,6 +1504,7 @@ display: none;
 
   .card h3 {   font-size: 1.5rem;  }
   .md-center { text-align: center;}
+  .md-left   { text-align: left;  }
   .padded-r-10 { padding: 0;}
   .padded-r-20 { padding: 0;}
   .bg-banner-md  { 
