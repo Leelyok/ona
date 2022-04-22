@@ -222,7 +222,7 @@ p:last-child {
 }
 
 .text-trigger {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .text-eastman {
@@ -1392,11 +1392,12 @@ form button {
   cursor: pointer; 
   padding: 15px; 
   position: relative;
+  font-size: 1.1rem;
 }
 .accordion-trigger::after{
   font-family: 'FontAwesome'; 
   content: "\f078"; 
-  font-size: 20px; 
+  font-size: 1.1rem;
   color: #FFF; 
   position: absolute; 
   right: 15px;
@@ -1501,7 +1502,7 @@ display: none;
    
   .title-text {   font-size: 1.5rem;  }
 
-  .text-trigger {  font-size: 1.3rem;  }
+  .text-trigger {  font-size: 1.1rem;  }
 
   .md-tall-50 {  min-height: 50vh;}
 
@@ -1589,7 +1590,7 @@ display: none;
     font-size: 6vw;
   }
 
-  .text-trigger {  font-size: 1.2rem;  }
+  .text-trigger {  font-size: 1.1rem;  }
 
   .title-text {   font-size: 1rem;  }
   .title-text1 {   font-size: 1rem;  }
