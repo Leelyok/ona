@@ -832,11 +832,11 @@ footer {    color: #1D1D1B;}
 .hamburger-button.active .burger-top{
   position: absolute;
   top: 8px;
-  transform: rotateZ(30deg);
+  transform: rotateZ(45deg);
 }
 
 .hamburger-button.active .burger-middle{
-  transform: rotateZ(270deg);
+ /* transform: rotateZ(270deg); */
   border-color: rgba(0,0,0,0);
   background-color:rgba(0,0,0,0);
 }
@@ -846,7 +846,7 @@ footer {    color: #1D1D1B;}
 .hamburger-button.active .burger-bottom{
   position: absolute;
   bottom: 8px;
-  transform: rotateZ(-15deg);
+  transform: rotateZ(-45deg);
 }
 
  
@@ -1603,6 +1603,7 @@ display: none;
     }
   .mob-pad-0 { padding: 0;  }
   .sm-padded-t2 { padding-top: 2%;}
+  .sm-padded-t10 { padding-top: 10%;}
 
   .logo-img {
       top: 0;
