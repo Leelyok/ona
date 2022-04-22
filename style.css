@@ -1633,6 +1633,13 @@ display: none;
     .bg-hair-services { min-height: 60vh;}
     .bg-hair-services1 { min-height: 60vh;}
     .bg-hair-services2 { min-height: 60vh;}
+
+    .quote1 {
+      font-size: 2rem;
+      font-family: 'Playfair Display SC', serif;
+      text-transform: none;
+      line-height: 0.9;
+    }
 }
 
 @media(max-width: 36em) {
