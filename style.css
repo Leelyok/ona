@@ -1395,7 +1395,7 @@ form button {
 }
 .accordion-trigger::after{
   font-family: 'FontAwesome'; 
-  content: "\f067"; 
+  content: "\f078"; 
   font-size: 20px; 
   color: #FFF; 
   position: absolute; 
