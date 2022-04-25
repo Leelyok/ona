@@ -1607,6 +1607,9 @@ display: none;
   .sm-padded-t2 { padding-top: 2%;}
   .sm-padded-t10 { padding-top: 10%;}
 
+  .sm-padded-l { padding-left: 5%;}
+  .sm-padded-l10 { padding-left: 10%;}
+
   .logo-img {
       top: 0;
       height: 173px;
