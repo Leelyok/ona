@@ -160,7 +160,7 @@ $(window).scroll(function() {
 });
 
 // ПЛАВНАЯ ПРОКРУТКА
-
+/*
 $(document).ready(function(){
   // Добавить плавную прокрутку до всех ссылок
   $("a").on('click', function(event) {
@@ -185,3 +185,5 @@ $(document).ready(function(){
     } // Конец, если
   });
 });
+
+*/
