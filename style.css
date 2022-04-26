@@ -1500,6 +1500,7 @@ display: none;
   p {  font-size: 0.9rem;}
 
   .padded-10 { padding: 1rem;}
+  .md-p-t5   { padding-top: 5%;}
    
   .title-text {   font-size: 1.5rem;  }
 
@@ -1571,6 +1572,8 @@ display: none;
   .margin-10 {  margin: 0;}
   .mob-mt    {  margin-top: 2rem;  }
 
+  .sm-p-t15  {  padding-top: 15%;}
+
   h1 { font-size: 2rem;}
   h2 { font-size: 1.4rem;}
   h3 { font-size: 1.3rem;}
@@ -1633,7 +1636,10 @@ display: none;
     .bg-massage { min-height: 60vh;}
     .bg-massage1 { min-height: 60vh;}
     .bg-eyelash { min-height: 50vh;}
-    .bg-hair-services { min-height: 60vh;}
+    .bg-hair-services { 
+      min-height: 60vh;
+      background-position: 90% 50%;
+    }
     .bg-hair-services1 { min-height: 60vh;}
     .bg-hair-services2 { min-height: 60vh;}
 
