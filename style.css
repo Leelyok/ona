@@ -508,7 +508,7 @@ margin-bottom: -5rem;
     background-position: center;
     background-size: cover;
     margin-top: -10rem;
-   background-attachment: fixed;
+    background-attachment: fixed;
 }
 .bg-banner1  { 
   background-image: url(/assets/duna.jpg);
