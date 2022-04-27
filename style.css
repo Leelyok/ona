@@ -1093,12 +1093,12 @@ a.bg-image {  display: block;}
 
 hr {
   border: none;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   width: 4rem;
 }
 
 hr.wide {
-  width: 8rem;
+  width: 15rem;
   margin: 2rem auto;
 }
 
