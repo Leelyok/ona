@@ -1672,6 +1672,11 @@ display: none;
       text-transform: none;
       line-height: 0.9;
     }
+
+    .shape-drop-md {
+      border-top-left-radius: 15rem;
+      border-bottom-right-radius: 15rem;
+    }
 }
 
 @media(max-width: 36em) {
