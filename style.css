@@ -1722,8 +1722,8 @@ display: none;
       border-bottom-right-radius: 15rem;
     }
 
-    .sm-padded-t20 {
-      padding-top: 20%;
+    .sm-padded-t25 {
+      padding-top: 25%;
       padding-bottom: 0%;
       padding-right: 0%;
       padding-left: 0%;
@@ -1733,6 +1733,7 @@ display: none;
       padding: 1rem 1rem;
     }
 }
+
 
 @media(max-width: 36em) {
 
