@@ -80,6 +80,13 @@ body {
   padding-left: 1%; 
 }
 
+.padded-t7 { 
+  padding-top: 7%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 5%; 
+}
+
 .padded-0 { padding: 0; }
 .padded-b-0 { padding-bottom: 0; }
 .padded-t-0 { padding-top: 0; }
@@ -340,6 +347,31 @@ a {  text-decoration: none;}
 nav a {
   text-decoration: none;
   padding: 1rem;
+}
+
+.border_tb {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.menu-div {
+  height: 48px;
+  display: flex;
+  overflow-x: scroll;
+  line-height: 1;
+  overflow-y: hidden;
+  white-space: nowrap;
+  line-height: 1;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 2rem 1rem;
+}
+
+.menu-div a {
+  margin-top: -1rem;
+}
+
+.menu-div nav a {
+  padding: 1.5rem;
 }
 
 /*a:hover { color: #A58365; } */
