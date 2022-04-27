@@ -1605,6 +1605,18 @@ display: none;
   font-size: .5rem;
 }
 
+.md-padded-t15 {
+  padding-top: 15%;
+  padding-bottom: 0%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.menu-div nav a {
+  padding: 0.6rem;
+  font-size: 0.8rem;
+}
+
 }
 
 /* SM - max-width in pixels approximately 768px */
@@ -1708,6 +1720,17 @@ display: none;
     .shape-drop-md {
       border-top-left-radius: 15rem;
       border-bottom-right-radius: 15rem;
+    }
+
+    .sm-padded-t20 {
+      padding-top: 20%;
+      padding-bottom: 0%;
+      padding-right: 0%;
+      padding-left: 0%;
+    }
+
+    .menu-div {
+      padding: 1rem 1rem;
     }
 }
 
