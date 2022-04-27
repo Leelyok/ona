@@ -1569,6 +1569,10 @@ display: none;
     height: none;
   }
 
+.small-footer {
+  font-size: .5rem;
+}
+
 }
 
 /* SM - max-width in pixels approximately 768px */
