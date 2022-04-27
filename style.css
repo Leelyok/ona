@@ -505,11 +505,12 @@ margin-bottom: -5rem;
     justify-content: center;
     /*  align-items: center;  */
     min-height: 100vh;
-    background-position: center;
+    background-position: 65% -23%;
     background-size: cover;
     margin-top: -10rem;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
+
 .bg-banner1  { 
   background-image: url(/assets/duna.jpg);
     display: flex;
@@ -1499,6 +1500,9 @@ display: none;
   h3 { font-size: 1.5rem;}
   p {  font-size: 0.9rem;}
 
+  .flex-flip-md { flex-direction: row-reverse; }
+  .flex-flip-col-md { flex-direction: column-reverse; }
+
   .padded-10 { padding: 1rem;}
   .md-p-t5   { padding-top: 5%;}
    
@@ -1520,8 +1524,12 @@ display: none;
     background-color: #F2EEE9;
     background-repeat: no-repeat;
   }
-  .flex-flip-md { flex-direction: row-reverse; }
-  .flex-flip-col-md { flex-direction: column-reverse; }
+
+  .bg-banner {
+    background-attachment: initial;
+    background-position: 50% 50%;
+    margin-top: -4rem;
+  }
 
   .shape-drop-md {
     border-top-left-radius: 20rem;
