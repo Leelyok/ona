@@ -507,6 +507,8 @@ img { max-width: 100%; }
   display: inline-block;
 }
 
+.width80 img {  max-width: 80%;  }
+
 svg { 
   max-width: 10%;
   color: #fff;  }
@@ -1541,6 +1543,8 @@ display: none;
 
   .flex-flip-md { flex-direction: row-reverse; }
   .flex-flip-col-md { flex-direction: column-reverse; }
+
+  .mob-width100 img {  max-width: 100%;  }
 
   .padded-10 { padding: 1rem;}
   .md-p-t5   { padding-top: 5%;}
