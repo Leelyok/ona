@@ -1544,8 +1544,6 @@ display: none;
   .flex-flip-md { flex-direction: row-reverse; }
   .flex-flip-col-md { flex-direction: column-reverse; }
 
-  .mob-width100 img {  max-width: 100%;  }
-
   .padded-10 { padding: 1rem;}
   .md-p-t5   { padding-top: 5%;}
    
@@ -1743,6 +1741,8 @@ display: none;
     .menu-div {
       padding: 1rem 1rem;
     }
+
+    
 }
 
 
@@ -1752,4 +1752,5 @@ display: none;
   h3 { font-size: 1.2rem;}
   .title-text {   font-size: 0.9rem;  }
   .title-text1 {   font-size: 0.9rem;  }
+  .mob-width100 img {  max-width: 100%;  }
 }
