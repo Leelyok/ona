@@ -68,6 +68,11 @@ body {
   padding-bottom: 5%;
 }
 
+.padded-tb3  { 
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
 .padded-tb10  { 
   padding-top: 10%;
   padding-bottom: 10%;
@@ -706,7 +711,6 @@ margin-bottom: -5rem;
 }
 
 .bg-facials {
-  background-image: url(/assets/facials.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
