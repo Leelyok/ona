@@ -1,6 +1,32 @@
 ---
 layout: default
 title: Eyelash & Eyebrow treatments
+eyelash_image: /assets/eyelash.jpg
+eyelash:
+ - treatment: LVL (Lift Volume & Length)
+   time: 60
+   price: 350
+ - treatment: Eyebrow Lamination
+   time: 60
+   price: 300
+ - treatment: DEyelash Tinting
+   time: 20
+   price: 65
+ - treatment: Eyebrow Tinting
+   time: 15
+   price: 65
+ - treatment: Eyebrow Threading
+   time: 20
+   price: 50
+ - treatment: Eyelash Lifting / Eyebrow Lamination Combo
+   time: 75
+   price: 600
+ - treatment: Eyelash/Eyebrow Tinting Combo
+   time: 30
+   price: 120
+ - treatment: Eyelash Tinting / Eyebrow Threading & Tinting Combo
+   time: 45
+   price: 165
 ---
 
 <!----------BURGER BUTTON------------->
@@ -35,7 +61,7 @@ title: Eyelash & Eyebrow treatments
     </div>
 <!-- First column  -->
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-eyelash"></div>
+        <div class="bg-eyelash" style="background-image: url('{{page.eyelash_image}}');"></div>
     </div>
        <!-- Second column  -->
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
@@ -49,78 +75,19 @@ title: Eyelash & Eyebrow treatments
             <div class="col-2-middle editable">
                 <span class="price"> Price (AED) </span>
             </div>
-                <div class="col-8 editable">
-                    <p> LVL (Lift Volume & Length) </p>
+
+                {% for item in page.eyelash %}
+                <div class="col-8">
+                    <p> {{item.treatment}} </p>
                 </div>
-                <div class="col-2 editable">
-                    <span class="price"> 60 </span>
+                <div class="col-2">
+                    <span class="price"> {{item.time}} </span>
                 </div>
-                <div class="col-2 editable">
-                    <span class="price"> 350 </span>
+                <div class="col-2">
+                    <span class="price"> {{item.price}} </span>
                 </div>
-                <div class="col-8 editable">
-                    <p> Eyebrow Lamination </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 60 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 300 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> DEyelash Tinting </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 65 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Eyebrow Tinting </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 15 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 65 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Eyebrow Threading  </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 50 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Eyelash Lifting / Eyebrow Lamination Combo </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 75 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 600 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Eyelash/Eyebrow Tinting Combo </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 30 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 120 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Eyelash Tinting / Eyebrow Threading & Tinting Combo </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 45 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 165 </span>
-                </div>
+                {% endfor %}
+
                 <div class="col-12 editable">
                     <h3 class="upper padded-b3"> Extensions </h3>
                 </div>
