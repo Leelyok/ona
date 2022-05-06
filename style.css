@@ -769,7 +769,15 @@ margin-bottom: -5rem;
 }
 
 .bg-behind {
-  background-image: url(/assets/6.jpg);
+  background-size: cover;
+  background-color: #F2EEE9;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s;
+  background-position: center;
+}
+
+.bg-top {
   background-size: cover;
   background-color: #F2EEE9;
   background-repeat: no-repeat;
