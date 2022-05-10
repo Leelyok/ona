@@ -1,6 +1,61 @@
 ---
 layout: default
-title: Waxing
+title: Waxing Ona Beauty hub
+roialwax:
+ - treatment: Underarm (Hard Wax)
+   time: 20
+   price: 70
+ - treatment: Half Arm (Roll Wax)
+   time: 15
+   price: 60
+ - treatment: Full Arm (Roll Wax)
+   time: 25
+   price: 90
+ - treatment: Half Leg (Roll Wax)
+   time: 20
+   price: 100
+ - treatment: Full Leg (Roll Wax))
+   time: 34
+   price: 130
+ - treatment: Bikini Line (Hard Wax)
+   time: 15
+   price: 90
+ - treatment: Half Bikini (Hard Wax)
+   time: 20
+   price: 110
+ - treatment: Full Bikini (Hard Wax)
+   time: 30
+   price: 130
+ - treatment: Full Brazilian (Hard Wax)
+   time: 40
+   price: 150
+ - treatment: Breast Line (Hard Wax)
+   time: 20
+   price: 70
+ - treatment: Chest (Roll Wax)
+   time: 20
+   price: 60
+ - treatment: Half Back (Roll Wax)
+   time: 20
+   price: 60
+ - treatment: Full Back (Roll Wax)
+   time: 30
+   price: 90
+ - treatment: Tummy Line (Hard Wax)
+   time: 15
+   price: 50
+ - treatment: Full Stomach (Roll Wax)
+   time: 20
+   price: 70
+ - treatment: Full body except sensitive areas (Roll Wax)
+   time: 90
+   price: 350
+ - treatment: Toes (Roll Wax)
+   time: 10
+   price: 20
+ - treatment: Fingers (Roll Wax)
+   time: 10
+   price: 20
 ---
 
 <!----------BURGER BUTTON------------->
@@ -49,15 +104,21 @@ title: Waxing
             <div class="col-2-middle editable">
                 <span class="price"> Price (AED) </span>
             </div>
-                <div class="col-8 editable">
-                    <p> Underarm (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 70 </span>
-                </div>
+
+
+            {% for item in page.roialwax %}
+            <div class="col-8">
+                <p> {{item.treatment}} </p>
+            </div>
+            <div class="col-2">
+                <span class="price"> {{item.time}} </span>
+            </div>
+            <div class="col-2">
+                <span class="price"> {{item.price}} </span>
+            </div>
+            {% endfor %}
+
+<!----------------------------------
                 <div class="col-8 editable">
                     <p> Half Arm (Roll Wax) </p>
                 </div>
@@ -211,6 +272,8 @@ title: Waxing
                 <div class="col-2 editable">
                     <span class="price"> 20 </span>
                 </div>
+
+                ----------------------------------------------->
         </div>
     </div>
 </section>
