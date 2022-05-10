@@ -579,7 +579,6 @@ margin-bottom: -5rem;
 }
 
 .bg-nailcare {  
-  background-image: url(/assets/NAIL-CARE.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -591,7 +590,6 @@ margin-bottom: -5rem;
 }
 
 .bg-hands2 {  
-  background-image: url(/assets/2.jpg);
   background-size: cover;
   background-position: top;
   display: flex;
@@ -603,7 +601,6 @@ margin-bottom: -5rem;
 }
 
 .bg-add-ons {
-  background-image: url(/assets/7.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -615,7 +612,6 @@ margin-bottom: -5rem;
 }
 
 .bg-hair-services {
-  background-image: url(/assets/hair2.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -627,7 +623,6 @@ margin-bottom: -5rem;
 }
 
 .bg-hair-services1 {
-  background-image: url(/assets/4.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -639,7 +634,6 @@ margin-bottom: -5rem;
 }
 
 .bg-hair-services2 {
-  background-image: url(/assets/HAIR-CARE.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -651,7 +645,6 @@ margin-bottom: -5rem;
 }
 
 .bg-hair-services3 {
-  background-image: url(/assets/hair5.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -663,7 +656,6 @@ margin-bottom: -5rem;
 }
 
 .bg-hair-services4 {
-  background-image: url(/assets/hair8.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -675,7 +667,6 @@ margin-bottom: -5rem;
 }
 
 .bg-hair-services5 {
-  background-image: url(/assets/hair1.jpg);
   background-size: cover;
   background-position: 0% 50%;
   display: flex;
