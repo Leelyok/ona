@@ -1,6 +1,17 @@
 ---
 layout: default
 title: Face treatments
+holisticfacial_image: /assets/facials.jpg
+facelifting:
+ - treatment: Face Lifting
+   time: 30
+   price: 250
+ - treatment: Face Lifting
+   time: 60
+   price: 450 
+ - treatment: Face Lifting
+   time: 90
+   price: 650
 ---
 
 <!----------BURGER BUTTON------------->
@@ -36,16 +47,17 @@ title: Face treatments
     </div>
 <!-- First column  -->
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-facials editable" style="background-image: url(/assets/facials.jpg);"></div>
+        <div class="bg-facials editable" style="background-image: url('{{page.holisticfacial_image}}');"></div>
     </div>
        <!-- Second column  -->
     
        <div class="col-6_md-12 padded mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
         <h3 class="upper padded-b3"> Holistic Facial Treatments </h3>
         <div class="accordion">
-
+  
+            
             <div class="accordion-item">
-                <div class="accordion-trigger editable">Face Lifting (from AED 250)
+                <div class="accordion-trigger editable">Face Lifting (from AED 250) 
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
@@ -58,34 +70,18 @@ title: Face treatments
                             <div class="col-2 editable"> <p class="right">Time<br>(min)</p></div>
                             <div class="col-2 editable"> <p class="right">Price</p></div>
 
-                            <div class="col-8 editable">
-                                <p>Face Lifting</p>
+                            {% for item in page.facelifting %}
+                            <div class="col-8">
+                                <p> {{item.treatment}} </p>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
+                            <div class="col-2">
+                                <span class="price"> {{item.time}} </span>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 250 </span></p>
+                            <div class="col-2">
+                                <span class="price"> {{item.price}} </span>
                             </div>
-                            <div class="col-8 editable">
-                                <p>Face Lifting</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 60 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 450 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Face Lifting</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 90 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 650 </span></p>
-                            </div>
-                            
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
