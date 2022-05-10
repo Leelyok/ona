@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Waxing Ona Beauty hub
+roialwax_image: /assets/epilation-2.jpg
 roialwax:
  - treatment: Underarm (Hard Wax)
    time: 20
@@ -56,6 +57,7 @@ roialwax:
  - treatment: Fingers (Roll Wax)
    time: 10
    price: 20
+lyconwax_image: /assets/epilation-1.jpg
 lyconwax:
  - treatment: Underarm (Hard Wax)
    time: 20
@@ -96,6 +98,7 @@ lyconwax:
  - treatment: Full Back (Roll Wax)
    time: 30
    price: 140
+lyconwax2_image: /assets/epilation.jpg
 lyconwax2:
  - treatment: Tummy Line (Hard Wax)
    time: 15
@@ -130,13 +133,38 @@ lyconwax2:
  - treatment: Nose (Hard Wax)
    time: 15
    price: 50
- - treatment: Cheeks / Sides (Hard Wax
+ - treatment: Cheeks / Sides (Hard Wax)
    time: 20
    price: 65
  - treatment: Fingers (Roll Wax)
    time: 10
    price: 40
-   
+threading_image: /assets/skin-care.jpg
+threading:
+ - treatment: Eyebrows
+   time: 20
+   price: 50
+ - treatment: Upper Lip
+   time: 10
+   price: 30
+ - treatment: Half Chin
+   time: 10
+   price: 40
+ - treatment: Full Chin
+   time: 15
+   price: 50
+ - treatment: Cheeks / Sides
+   time: 20
+   price: 50
+ - treatment: Eyebrow & Upper Lip
+   time: 25
+   price: 75
+ - treatment: Neck
+   time: 20
+   price: 60
+ - treatment: Full Face (not including eyebrows)
+   time: 40
+   price: 130
 ---
 
 <!----------BURGER BUTTON------------->
@@ -171,7 +199,7 @@ lyconwax2:
         <h2 class="text-big"> WAXING </h2>
     </div>
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-epilation"></div>
+        <div class="bg-epilation" style="background-image: url('{{page.roialwax_image}}');"></div>
     </div>
      
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
@@ -204,18 +232,6 @@ lyconwax2:
 </section>
 
 
-
-<!-----Banner EPILATION section-----
-<section class="tall-50 md-tall-20 grid" style="background-image:url('/assets/epilation-full-body.jpg'); background-position: 50% 15%;" id="epilation">
-    <div class="overlay01 grid-center col-12">
-        <div class="text-white col-11-middle grid-center" data-aos="fade-up" data-aos-duration="2000" style="justify-content: left;">
-
-        </div>
-    </div>
-</section>
-------------------------->
-
-
 <section class="padded menu grid-center">
     <!-- First column  -->
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
@@ -246,12 +262,12 @@ lyconwax2:
     </div>
  <!-- Second column  -->
     <div class="col-6_md-12 padded-2 mob-pad-0 hide-md" data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-epilation1" style="background-image: url('/assets/epilation-1.jpg');"></div>
+        <div class="bg-epilation1" style="background-image: url('{{page.lyconwax_image}}');"></div>
     </div>
 
 
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-epilation1" style="background-image: url('/assets/EPILATION.jpg');"></div>
+        <div class="bg-epilation1" style="background-image: url('{{page.lyconwax2_image}}');"></div>
     </div>
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
         <div class="grid">
@@ -277,118 +293,6 @@ lyconwax2:
             </div>
             {% endfor %}
 
-<!-------------------------------------------------------
-                <div class="col-8 editable">
-                    <p> Full Stomach (Roll Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 100 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Full body except sensitive areas (Roll Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 90 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 500 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Toes (Roll Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 10 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 40 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Full Face & Neck (no eyebrow) (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 40 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 165 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Neck (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 65 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Eyebrow (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 75 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Half Chin (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 10 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 50 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Full Chin (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 15 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 65 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Upper Lip (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 10 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 45 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Nose (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 15 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 50 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Cheeks / Sides (Hard Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 65 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Fingers (Roll Wax) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 10 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 40 </span>
-                </div>
-
-
-                -------------------------->
         </div>
     </div>    
 
@@ -404,82 +308,24 @@ lyconwax2:
             <div class="col-2-middle editable">
                 <span class="price"> Price (AED) </span>
             </div>
-                <div class="col-8 editable">
-                    <p> Eyebrows </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 50 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Upper Lip </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 10 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 30 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Half Chin </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 10 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 40 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Full Chin </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 15 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 50 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Cheeks / Sides </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 50 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Eyebrow & Upper Lip </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 25 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 75 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Neck </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 20 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 60 </span>
-                </div>
-                <div class="col-8 editable">
-                    <p> Full Face (not including eyebrows) </p>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 40 </span>
-                </div>
-                <div class="col-2 editable">
-                    <span class="price"> 130 </span>
-                </div>
+
+
+            {% for item in page.threading %}
+            <div class="col-8">
+                <p> {{item.treatment}} </p>
+            </div>
+            <div class="col-2">
+                <span class="price"> {{item.time}} </span>
+            </div>
+            <div class="col-2">
+                <span class="price"> {{item.price}} </span>
+            </div>
+            {% endfor %}
+
         </div>
     </div>
     <div class="col-6_md-12 padded-2 hide-md" data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-epilation2"></div>
+        <div class="bg-epilation2" style="background-image: url('{{page.threading_image}}');"></div>
     </div>
 </section>
 

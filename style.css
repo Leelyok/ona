@@ -732,7 +732,6 @@ margin-bottom: -5rem;
 }
 
 .bg-epilation {
-  background-image: url(/assets/epilation-2.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -755,7 +754,6 @@ margin-bottom: -5rem;
 }
 
 .bg-epilation2 {
-  background-image: url(/assets/SKIN-CARE.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
