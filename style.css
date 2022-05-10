@@ -1168,6 +1168,7 @@ a.bg-image {  display: block;}
 
 
 .relative { position: relative;}
+.fix { position: fixed;}
 
 
 /*   HR   */
