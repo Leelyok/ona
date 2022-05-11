@@ -465,6 +465,8 @@ nav a {
   border: 13px solid rgba(248,248,248,0.3);
   background-clip: padding-box;
   background-color: white;
+  z-index: 1001;
+  margin-top: -7rem;
 }
 
 .button-white a:hover {
@@ -1623,6 +1625,8 @@ display: none;
     border: 13px solid rgba(248,248,248,0.3);
     background-clip: padding-box;
     background-color: white;
+    z-index: 1001;
+    margin-top: -4rem;
   }
 
   .text-sm {
