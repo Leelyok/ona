@@ -1622,6 +1622,7 @@ display: none;
 
   .text-1r {   
     font-size: 0.8rem;}
+
   .button-white {
     display:block;
     height: 80px;
@@ -1632,6 +1633,10 @@ display: none;
     background-color: white;
     z-index: 1001;
     margin-top: -4rem;
+  }
+
+  .sm-margin-tm4 {
+    margin-top: -4px;
   }
 
   .text-sm {
