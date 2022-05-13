@@ -205,6 +205,11 @@ p:last-child {
   font-style: italic;
 }
 
+.text-center {
+  display:flex;
+  align-items:center;
+}
+
 .quote1 {
   font-size: 3rem;
   font-family: 'Playfair Display SC', serif;
