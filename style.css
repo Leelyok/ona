@@ -99,6 +99,9 @@ body {
 .padded-left {  padding: 0rem 20px;}
 .padded-2lr  {  padding: 0% 2%;  }
 
+.padded-v {    padding: 12vh 0; }
+.padded-vi {    padding: 5vh 1vh; }
+
 .margin-b-0 { margin-bottom: 0; }
 
 .margin      { margin: 1rem; }
@@ -243,8 +246,14 @@ p:last-child {
   font-size: 1.1rem;
 }
 
-.text-eastman {
-  font-family: 'Eastman Alternate';
+.pinned-to-bottom {
+  font-size: 15vw;
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  right: 1rem;
+  color: white;
+  text-align: center;
 }
 
 .upper {
@@ -478,6 +487,19 @@ nav a {
   color: black
 }
 
+.button-menu {
+  padding: 5% 5%;
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  background-color: #a58365;
+  font-size: 1.3rem;
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+.block    { display: block;}
+
 /*  video section  */
 
 .z-0 {    z-index: 0;  }
@@ -534,6 +556,15 @@ svg {
   background-repeat: no-repeat;
   opacity: 1;
   transition: opacity 1s;
+}
+
+.bg-image.fashion {
+  background-image: url('/assets/epilation-1.jpg');
+}
+
+.mob-horizontal-scroll .bg-image {
+  position: relative;
+  padding-bottom: 160%;
 }
 
 .quote {
@@ -1689,6 +1720,12 @@ display: none;
     background-attachment: initial;
     background-position: 80% 50%;
     margin-top: -4rem;
+  }
+
+  .mob-horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: auto;
   }
 
   .flex-flip-sm { flex-direction: row-reverse; }
