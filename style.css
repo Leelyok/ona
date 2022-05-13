@@ -247,7 +247,7 @@ p:last-child {
 }
 
 .pinned-to-bottom {
-  font-size: 15vw;
+  font-size: 12vw;
   position: absolute;
   left: 1rem;
   top: 2rem;
@@ -558,8 +558,23 @@ svg {
   transition: opacity 1s;
 }
 
-.bg-image.fashion {
-  background-image: url('/assets/epilation-1.jpg');
+.bg-image.fashion1 {
+  background-image: url('/assets/4.jpg');
+}
+.bg-image.fashion2 {
+  background-image: url('/assets/EYELASH-EYEBROW-CARE.png');
+}
+.bg-image.fashion3 {
+  background-image: url('/assets/NAIL-CARE.jpg');
+}
+.bg-image.fashion4 {
+  background-image: url('/assets/facials-2.jpg');
+}
+.bg-image.fashion5 {
+  background-image: url('/assets/EPILATION.jpg');
+}
+.bg-image.fashion6 {
+  background-image: url('/assets/SKIN-CARE.jpg');
 }
 
 .mob-horizontal-scroll .bg-image {
