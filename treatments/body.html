@@ -2,6 +2,7 @@
 layout: default
 title: Body treatments
 massage_image: /assets/massage2.jpg
+holistic_image: /assets/massage5.jpg
 massages:
    -
       treatment: Head Massage
@@ -59,6 +60,16 @@ massages:
       treatment: Hand Massage
       time: 30
       price: 110
+sculpting:
+ - treatment: Body Sculpting
+   time: 30
+   price: 300
+ - treatment: Body Sculpting
+   time: 60
+   price: 500
+ - treatment: Body Sculpting
+   time: 90
+   price: 700
 ---
 
 <!-----------BURGER NAV SERVICES--------->
@@ -105,6 +116,43 @@ massages:
                 
                
         </div>
+    </div>
+    
+</section>
+
+<section class="padded padded-t-0 md-p-t5 sm-p-t15 menu grid-center" id="facials">
+
+    <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <div class="grid">
+            <div class="col-8 editable">
+                <h3 class="upper padded-b3">Holistic Body Sculpture</h3>
+            </div>
+            <div class="col-2-middle editable">
+                <p><span class="price"> Time (min) </span></p>
+            </div>
+            <div class="col-2-middle editable">
+                <p><span class="price"> Price (AED) </span></p>
+            </div>
+
+                {% for item in page.sculpting %}
+                <div class="col-8">
+                    <p>{{item.treatment}}</p>
+                </div>
+                <div class="col-2">
+                    <p><span class="price"> {{item.time}} </span></p>
+                </div>
+                <div class="col-2">
+                    <p><span class="price"> {{item.price}} </span></p>
+                </div>
+                {% endfor %}     
+
+                <div class="col-12 editable">
+                    <p><em>*Sculpts and reshapes the body and helps to maintain successful weight loss. For the best results this is combined with Pranic healing for psychological health and well being.</em></p>
+                </div>      
+        </div>
+    </div>
+    <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <div class="bg-massage1" style="background-image: url('{{page.holistic_image}}');"></div>
     </div>
     
 </section>
