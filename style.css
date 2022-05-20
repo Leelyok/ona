@@ -32,6 +32,7 @@ body {
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
+.tall-75 { min-height: 75vh; }
 .tall-80 { min-height: 80vh; }
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
@@ -1613,6 +1614,7 @@ display: none;
   .hide-md { display: none;  }
   
   .md-tall-80 {  min-height: 80vh;}
+  .md-tall-85 {  min-height: 85vh;}
   .md-tall-70 {  min-height: 70vh;}
   .md-tall-60 {  min-height: 60vh;}
   .md-tall-65 {  min-height: 65vh;}
