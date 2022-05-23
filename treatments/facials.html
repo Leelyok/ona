@@ -1,23 +1,13 @@
 ---
 layout: default
 title: Face treatments
+main-name: FACE
 holisticfacial_image: /assets/facials.jpg
+holisticfacial-name: Holistic Facial Treatments
 holisticbody_image: /assets/facials-2.jpg
+holisticbody-name: Holistic Healing Treatments
 pevoniafacial_image: /assets/massage3.jpg
 pevonia2facial_image: /assets/facials-3.jpg
-facelifting:
-   -
-      treatment: Face Lifting
-      time: 30
-      price: 250
-   -
-      treatment: Face Lifting
-      time: 60
-      price: 450
-   -
-      treatment: Face Lifting
-      time: 90
-      price: 650
 pevonia:
  - service: De-Stress Eye Treatment from Puffiness & Dark Circles
    time: 30
@@ -52,7 +42,98 @@ pevonia2:
    time: 90
    price: 750
    description: Relax and let our masters take a very good care of your skin! Your skin is cleansed, lightly exfoliated and gently massaged. A pore-refining mask is then applied, followed by a veil of light moisturizer. Mask options - Sensitive, Dry, Oily, Combination, Acne.
-
+holisticfacials:
+ - type: Face Lifting (from AED 250)
+   description: Through the divine energy of Hands Facial massage is the most natural way to lift, tone, and sculpt the muscle tissues of your face and neck. There are so many benefits of facial massage, including more contour, muscle tone, and youthful-looking skin.
+   facelifting:
+    - treatment: Face Lifting
+      time: 30
+      price: 250
+    - treatment: Face Lifting
+      time: 60
+      price: 450
+    - treatment: Face Lifting
+      time: 90
+      price: 650
+ - type: Face Cupping (from AED 250)
+   description: Cupping draws fluid into the area, boost skin radiance, helps with lymphatic drainage, increases the blood flow to the skin, helps to reduce fine lines and texture. Makes the skin more plump, lifts the cheeks, eye and jowl area and depuff the face. It also boosts collagen and regulates oil production.
+   facelifting:
+    - treatment: Face Cupping
+      time: 30
+      price: 250
+ - type: Crystal Facial (from AED 250)
+   description: Repairs cellular damage, drains toxins & heals wounds on the skin, balances the chakras & relaxes the soul. Crystals and stones posses properties that can ward off negative energy. Lift the spirit and facilitate healing - for both the body and mind.
+   facelifting:
+    - treatment: Crystal Facial
+      time: 30
+      price: 250
+    - treatment: Crystal Facial
+      time: 60
+      price: 450
+    - treatment: Crystal Facial
+      time: 90
+      price: 650
+ - type: Gua Sha Facial (from AED 250)
+   description: Fewer wrinkles and fine lines by improved blood circulation, boosting the collagen and releasing the muscle tension. Achieve plumper skin and minimised pores by draining the lymphatic nodes.
+   facelifting:
+    - treatment: Gua Sha Facial
+      time: 30
+      price: 250
+ - type: 3D Face Massage (from AED 250)
+   description: Relaxes the facial muscles & provides an instant de-puffing effect of toned and sculpted muscles. Boosts blood circulation which aids in removing fine lines.
+   facelifting:
+    - treatment: 3D Face Massage
+      time: 30
+      price: 250
+holisticbody:
+ - type: Reiki Healing (from AED 300)
+   description: Reiki is an energy healing technique that promotes relaxation, reduces stress and anxiety through gentle touch. Reiki practitioners use their hands to deliver energy to your body, improving the flow and balance of your energy to support healing. Experience Reiki to transform your life & feel inner joy. Release negative emotions like anger, sadness, & experience relaxation, improved relationships and a reduction of stress. This is a hands-on natural healing using the universal life force energy.
+   healing:
+    - treatment: Reiki Healing
+      time: 30
+      price: 300
+    - treatment: Reiki Healing
+      time: 60
+      price: 500
+    - treatment: Reiki Healing
+      time: 90
+      price: 700
+ - type: Pranic Healing (from AED 300)
+   description: Pranic Healing is a simple, yet powerful & effective system of non-touching energy healing, consists of cleansing and energizing. This is highly developed and tested system of energy treatment that uses prana to balance, harmonize & transform the body's energy processes. Prana in Sanskrit means Life-Force. In Pranic Healing, "dirty" energy, which our body getting in contact with, is “swept” away out of your aura and chakras. Fresh prana is then directed to the areas where it is needed to facilitate rapid healing.
+   healing:
+    - treatment: Pranic Healing
+      time: 30
+      price: 300
+    - treatment: Pranic Healing
+      time: 60
+      price: 500
+    - treatment: Pranic Healing
+      time: 90
+      price: 700
+ - type: Access bar (from AED 300)
+   description: An amazing treatment that involves gently touching 32 different energy centers on your head & once unlocked & released they flow down into the body. These centers (aka bars) contain all the thoughts, ideas, beliefs, emotions, and considerations that you have stored in any lifetime.
+   healing:
+    - treatment: Access bar
+      time: 30
+      price: 300
+    - treatment: Access bar
+      time: 60
+      price: 500
+    - treatment: Access bar
+      time: 90
+      price: 700
+ - type: Crystal Healing (from AED 300)
+   description: Crystals with specific stones are said to help to relieve specific ailments such as anxiety, depression and insomnia, or more physical ailments such as digestive problems. They're proven to promote the flow of good energy and help rid the body and mind of negative energy for physical and emotional benefits. Historically speaking, crystals are touted as ancient forms of medicine, with philosophies borrowed from Hinduism and Buddhism.
+   healing:
+    - treatment: Crystal Healing
+      time: 30
+      price: 300
+    - treatment: Crystal Healing
+      time: 60
+      price: 500
+    - treatment: Crystal Healing
+      time: 90
+      price: 700
 ---
 
 <!-----------BURGER NAV SERVICES--------->
@@ -64,8 +145,8 @@ pevonia2:
 
 <!-----FACIALS-------->
 <section class="padded padded-t-0 md-p-t5 sm-p-t15 menu grid-center" id="facials">
-    <div class="col-12 center editable" data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-big">FACE</h2>
+    <div class="col-12 center" data-aos="fade-up" data-aos-duration="2000">
+        <h2 class="text-big">{{page.main-name}}</h2>
     </div>
 
     <!-- First column  -->
@@ -136,41 +217,42 @@ pevonia2:
         <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="bg-facials" style="background-image: url('{{page.holisticfacial_image}}');"></div>
         </div>
-       <div class="col-6_md-12 padded mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3"> Holistic Facial Treatments </h3>
+       <div class="col-6_md-12 padded mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="upper padded-b3">{{page.holisticfacial-name}}</h3>
         <div class="accordion">
   
             
+            {% for item in page.holisticfacials %}
             <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Face Lifting (from AED 250)</p>
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}}</p>
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
                         <!-- First column nail services. -->
                         <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*Through the divine energy of Hands Facial massage is the most natural way to lift, tone, and sculpt the muscle tissues of your face and neck. There are so many benefits of facial massage, including more contour, muscle tone, and youthful-looking skin.</em></p>
+                            <div class="col-12">
+                                <p><em>{{item.description}}</em></p>
                             </div>
-                            <div class="col-8 editable">
+                            <div class="col-8">
                              
                             </div>
-                            <div class="col-2 editable">
+                            <div class="col-2">
                                 <p class="right">Time<br />(min)</p>
                             </div>
-                            <div class="col-2 editable">
+                            <div class="col-2">
                                 <p class="right">Price</p>
                             </div>
 
-                            {% for item in page.facelifting %}
+                            {% for service in item.facelifting %}
                             <div class="col-8">
-                                <p> {{item.treatment}} </p>
+                                <p> {{service.treatment}} </p>
                             </div>
                             <div class="col-2">
-                                <span class="price"> {{item.time}} </span>
+                                <span class="price"> {{service.time}} </span>
                             </div>
                             <div class="col-2">
-                                <span class="price"> {{item.price}} </span>
+                                <span class="price"> {{service.price}} </span>
                             </div>
                             {% endfor %}
 
@@ -179,397 +261,65 @@ pevonia2:
                 </div>
               </div>
 
-            <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Face Cupping (from AED 250)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*Cupping draws fluid into the area, boost skin radiance, helps with lymphatic drainage, increases the blood flow to the skin, helps to reduce fine lines and texture. Makes the skin more plump, lifts the cheeks, eye and jowl area and depuff the face. It also boosts collagen and regulates oil production.</em></p>
-                            </div>
-                            <div class="col-8 editable">
-                              
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Time<br />(min)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Price</p>
-                            </div>
-
-                            <div class="col-8 editable">
-                                <p>Face Cupping</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 250 </span></p>
-                            </div>
-                    
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Crystal Facial (from AED 250)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*Repairs cellular damage, drains toxins &amp; heals wounds on the skin, balances the chakras &amp; relaxes the soul. Crystals and stones posses properties that can ward off negative energy. Lift the spirit and facilitate healing - for both the body and mind.</em></p>
-                            </div>
-                            <div class="col-8 editable">
-                               
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Time<br />(min)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Price</p>
-                            </div>
-
-                            <div class="col-8 editable">
-                                <p>Crystal Facial</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 250 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Crystal Facial</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 60 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 450 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Crystal Facial</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 90 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 650 </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Gua Sha Facial (from AED 250)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*Fewer wrinkles and fine lines by improved blood circulation, boosting the collagen and releasing the muscle tension. Achieve plumper skin and minimised pores by draining the lymphatic nodes.</em></p>
-                            </div>
-                            <div class="col-8 editable">
-                              
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Time<br />(min)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Price</p>
-                            </div>
-
-                            <div class="col-8 editable">
-                                <p>Gua Sha Facial</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 250 </span></p>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>3D Face Massage (from AED 250)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*Relaxes the facial muscles &amp; provides an instant de-puffing effect of toned and sculpted muscles. Boosts blood circulation which aids in removing fine lines.</em></p>
-                            </div>
-                            <div class="col-8 editable">
-                               
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Time<br />(min)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Price</p>
-                            </div>
-
-                            <div class="col-8 editable">
-                                <p>3D Face Massage</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 250 </span></p>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-              </div>
+              {% endfor %}            
 
 
         </div>
     </div>
 
 
-    <div class="col-6_md-12 padded mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3"> Holistic Healing Treatments </h3>
+    <div class="col-6_md-12 padded mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="upper padded-b3">{{page.holisticbody-name}}</h3>
         <div class="accordion">
+
+            {% for item in page.holisticbody %}
             <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Reiki Healing (from AED 300)</p>
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}}</p>
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
+
                         <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                              <p><em>*Reiki is an energy healing technique that promotes relaxation, reduces stress and anxiety through gentle touch. Reiki practitioners use their hands to deliver energy to your body, improving the flow and balance of your energy to support healing. Experience Reiki to transform your life &amp; feel inner joy. Release negative emotions like anger, sadness, &amp; experience relaxation, improved relationships and a reduction of stress. This is a hands-on natural healing using the universal life force energy.</em></p>
+                            <div class="col-12">
+                              <p><em>{{item.description}}</em></p>
                             </div>
-                            <div class="col-8 editable">
+                            <div class="col-8">
                                 
                             </div>
-                            <div class="col-2 editable">
+                            <div class="col-2">
                                 <p class="right">Time<br />(min)</p>
                             </div>
-                            <div class="col-2 editable">
+                            <div class="col-2">
                                 <p class="right">Price</p>
                             </div>
 
-                            <div class="col-8 editable">
-                                <p>Reiki Healing</p>
+                            {% for service in item.healing %}
+                            <div class="col-8">
+                                <p>{{service.treatment}}</p>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
+                            <div class="col-2">
+                                <p><span class="price">{{service.time}}</span></p>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 300 </span></p>
+                            <div class="col-2">
+                                <p><span class="price">{{service.price}}</span></p>
                             </div>
-                            <div class="col-8 editable">
-                                <p>Reiki Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 60 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 500 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Reiki Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 90 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 700 </span></p>
-                            </div>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
               </div>
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Pranic Healing (from AED 300)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*Pranic Healing is a simple, yet powerful &amp; effective system of non-touching energy healing, consists of cleansing and energizing. This is highly developed and tested system of energy treatment that uses prana to balance, harmonize &amp; transform the body's energy processes. Prana in Sanskrit means Life-Force. In Pranic Healing, "dirty" energy, which our body getting in contact with, is &ldquo;swept&rdquo; away out of your aura and chakras. Fresh prana is then directed to the areas where it is needed to facilitate rapid healing.</em></p>
-                            </div>
-                            <div class="col-8 editable">
-                               
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Time<br />(min)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Price</p>
-                            </div>
-
-                            <div class="col-8 editable">
-                                <p>Pranic Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 300 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Pranic Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 60 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 500 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Pranic Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 90 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 700 </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Access bar (from AED 300)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*An amazing treatment that involves gently touching 32 different energy centers on your head &amp; once unlocked &amp; released they flow down into the body. These centers (aka bars) contain all the thoughts, ideas, beliefs, emotions, and considerations that you have stored in any lifetime.</em></p>
-                            </div>
-                            <div class="col-8 editable">
-                              
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Time<br />(min)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Price</p>
-                            </div>
-
-                            <div class="col-8 editable">
-                                <p>Access bar</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 300 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Access bar</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 60 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 500 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Access bar</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 90 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 700 </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Crystal Healing (from AED 300)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p><em>*Crystals with specific stones are said to help to relieve specific ailments such as anxiety, depression and insomnia, or more physical ailments such as digestive problems. They're proven to promote the flow of good energy and help rid the body and mind of negative energy for physical and emotional benefits. Historically speaking, crystals are touted as ancient forms of medicine, with philosophies borrowed from Hinduism and Buddhism.</em></p>
-                            </div>
-                            <div class="col-8 editable">
-                               
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Time<br />(min)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p class="right">Price</p>
-                            </div>
-
-                            <div class="col-8 editable">
-                                <p>Crystal Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 30 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 300 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Crystal Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 60 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 500 </span></p>
-                            </div>
-                            <div class="col-8 editable">
-                                <p>Crystal Healing</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 90 </span></p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 700 </span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
+    {% endfor %}
 
         </div>
     </div>
+
+
     <div class="col-6_md-12 padded-2 mob-pad-0 hide-md" data-aos="fade-up" data-aos-duration="2000">
         <div class="bg-facials" style="background-image: url('{{page.holisticbody_image}}')"></div>
     </div>
+
 
 </section>
 
