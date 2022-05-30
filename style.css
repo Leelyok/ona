@@ -544,6 +544,8 @@ img { max-width: 100%; }
 }
 
 .width80 img {  max-width: 80%;  }
+.width45 img {  max-width: 45%;  }
+.width95 img {  max-width: 95%;  }
 
 svg { 
   max-width: 10%;
