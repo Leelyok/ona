@@ -1,8 +1,120 @@
 ---
 layout: default
 title: Hair treatments
+main-name: HAIR
+category: Haircut
 haircut_image: /assets/hair2.jpg
+haircut:
+- type: Cut &amp; Express Dry (from AED 160)
+  cut:
+   - treatment: Junior Stylist
+     time: 55
+     price: 160
+   - treatment: Top Stylist
+     time: 45
+     price: 250
+   - treatment: Master Stylist
+     time: 45
+     price: 350
+   - treatment: Add On for X-Long & XX-Long Hair
+     time: from
+     price: 100
+- type: Cut & Blow-dry (with shampoo) (from AED 250)
+  cut:
+   - treatment: Junior Stylist
+     time: 70
+     price: 250
+   - treatment: Top Stylist
+     time: 60
+     price: 350
+   - treatment: Master Stylist
+     time: 60
+     price: 350
+   - treatment: Add On for X-Long & XX-Long Hair
+     time: from
+     price: 100
+- type: Fringe Trim (from AED 50)
+  cut:
+   - treatment: Junior Stylist
+     time: 20
+     price: 50
+   - treatment: Top Stylist
+     time: 15
+     price: 70
+   - treatment: Master Stylist
+     time: 15
+     price: 90
+- type: Hair Trim (from AED 100)
+  cut:
+   - treatment: Junior Stylist
+     time: 35
+     price: 100
+   - treatment: Top Stylist
+     time: 25
+     price: 140
+   - treatment: Master Stylist
+     time: 25
+     price: 190
+- type: Little Princess Hair Cut (below 10 years old) (from AED 100)
+  cut:
+   - treatment: Junior Stylist
+     time: 55
+     price: 100
+   - treatment: Top Stylist
+     time: 45
+     price: 150
+   - treatment: Master Stylist
+     time: 45
+     price: 190
 hairstyling_image: /assets/4.jpg
+category2: Hair Styling
+hairstyling:
+- type: Hair Wash (with massage) (from AED 75)
+  style:
+   - treatment: Short Hair
+     time: 10
+     price: 75
+   - treatment: Medium Hair
+     time: 15
+     price: 85
+   - treatment: Long Hair
+     time: 20
+     price: 95
+   - treatment: X-Long Hair
+     time: 25
+     price: 105
+   - treatment: XX-Long Hair
+     time: 30
+     price: 115
+- type: Blow Dry (with shampoo) (from AED 120)
+  description: -Prices below are changeable and vary by creative level of Stylist & Hair Density.
+  style:
+   - treatment: Short Hair
+     time: 45
+     price: 120
+   - treatment: Medium Hair
+     time: 60
+     price: 150
+   - treatment: Long Hair
+     time: 75
+     price: 180
+   - treatment: X-Long Hair
+     time: 90
+     price: 210
+- type: Add-Ons (from AED 100)
+  style:
+   - treatment: Style to Last (Pin curls, Tongs, Iron etc.)
+     time: 
+     price: 100
+   - treatment: Hair Braiding 
+     time: 
+     price: 100
+   - treatment: Red Carpet Style
+     time: 
+     price: 250
+   - treatment: Makeover Master Stylist
+     time: 90-120
+     price: 500
 haircolour_image: /assets/HAIR-CARE.jpg
 hairhighlights_image: /assets/hair5.jpg
 treatment_image: /assets/hair8.jpg
@@ -19,207 +131,101 @@ treatment2_image: /assets/hair1.jpg
 
 <!------------------HAIR---------------->
 <section class="padded padded-t-0 md-p-t5 sm-p-t15 menu grid-center" id="top">
-    <div class="col-12 center editable" data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-big">HAIR</h2>
+    <div class="col-12 center" data-aos="fade-up" data-aos-duration="2000">
+        <h2 class="text-big">{{page.main-name}}</h2>
     </div>
 <!-- First column  -->
     <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
         <div class="bg-hair-services" style="background-image: url('{{page.haircut_image}}');"></div>
     </div>
        <!-- Second column  -->
-    <div class="col-6_md-12 padded-2 mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3"> Haircut </h3>
+    <div class="col-6_md-12 padded-2 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="upper padded-b3"> {{page.category}} </h3>
         <div class="accordion">
+
+            {% for item in page.haircut %}
             <div class="accordion-item">
-              <div class="accordion-trigger grid margin-0 editable">
-                  <p>Cut &amp; Express Dry (from AED 160)</p>
-              </div>
-              <div class="accordion-collapse">
-                  <div class="grid-spaceBetween">
-                      <!-- First column nail services. -->
-                      <div class="col-12 padded-2 grid">
-                          <div class="col-10 editable">
-                              <p>Junior Stylist</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price">160 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>Top Stylist</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price">250 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>Master Stylist</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price">350 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>Add On for X-Long &amp; XX-Long Hair</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price">from&nbsp; &nbsp;100 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p><em> *Timing from 45 min </em></p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Cut &amp; Blow-dry (with shampoo) (from AED 250)</p>
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}}</p>
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
                         <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Junior Stylist</p>
+
+                            <div class="col-8"></div>
+                            <div class="col-2">
+                                <p class="right">Time<br />(min)</p>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">250 </span></p>
+                            <div class="col-2">
+                                <p class="right">Price</p>
                             </div>
-                            <div class="col-10 editable">
-                                <p>Top Stylist</p>
+
+                            {% for service in item.cut %}
+                            <div class="col-8">
+                                <p> {{service.treatment}} </p>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 350 </span></p>
+                            <div class="col-2">
+                                <span class="price"> {{service.time}} </span>
                             </div>
-                            <div class="col-10 editable">
-                                <p>Master Stylist</p>
+                            <div class="col-2">
+                                <span class="price"> {{service.price}} </span>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 450 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Add On for X-Long &amp; XX-Long Hair</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">from&nbsp; 100 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 60 min </em></p>
-                            </div>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Fringe Trim (from AED 50)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Junior Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">50 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Top Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">70 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Master Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">90 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 15 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
+              {% endfor %}  
 
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Hair Trim (from AED 100)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Hair Trim Junior Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">100 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Hair Trim Top Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">140 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Hair Trim Master Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">190 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 25 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Little Princess Hair Cut (below 10 years old) (from AED 100)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Junior Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price">100 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Top Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 150 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Master Stylist</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 190 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 45 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
 
         </div>
     </div>
 
 
     <!-- First column  -->
-    <div class="col-6_md-12 padded mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3"> Hair Styling </h3>
+    <div class="col-6_md-12 padded mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="upper padded-b3">{{page.category2}}</h3>
         <div class="accordion">
+
+            {% for item in page.hairstyling %}
+            <div class="accordion-item">
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}}<br /><span class="text-xxs"><em> {{item.description}}</em> </span></p>
+                </div>
+                <div class="accordion-collapse">
+                    <div class="grid-spaceBetween">
+                        <div class="col-12 padded-2 grid">
+
+                            <div class="col-8"></div>
+                            <div class="col-2">
+                                <p class="right">Time<br />(min)</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="right">Price</p>
+                            </div>
+
+                            {% for service in item.style %}
+                            <div class="col-8">
+                                <p> {{service.treatment}} </p>
+                            </div>
+                            <div class="col-2">
+                                <span class="price"> {{service.time}} </span>
+                            </div>
+                            <div class="col-2">
+                                <span class="price"> {{service.price}} </span>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              {% endfor %}  
+
+              <!-----
 
             <div class="accordion-item">
                 <div class="accordion-trigger grid margin-0 editable">
@@ -227,7 +233,7 @@ treatment2_image: /assets/hair1.jpg
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
+                    
                         <div class="col-12 padded-2 grid">
                             <div class="col-8 editable">
                                 
@@ -296,7 +302,7 @@ treatment2_image: /assets/hair1.jpg
               </div>
               <div class="accordion-collapse">
                   <div class="grid-spaceBetween">
-                      <!-- First column nail services. -->
+                 
                       <div class="col-12 padded-2 grid">
                         <div class="col-8 editable">
                             
@@ -355,7 +361,7 @@ treatment2_image: /assets/hair1.jpg
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
+                 
                         <div class="col-12 padded-2 grid">
                             <div class="col-10 editable">
                                 <p>Style to Last (Pin curls, Tongs, Iron etc.)</p>
@@ -385,7 +391,7 @@ treatment2_image: /assets/hair1.jpg
                     </div>
                 </div>
               </div>
-
+---->
         </div>
     </div>
 <!-- Second column  -->
