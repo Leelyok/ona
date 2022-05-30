@@ -284,7 +284,85 @@ hairhighlight:
      time: 140
      price: 960
 treatment_image: /assets/hair8.jpg
+category5: Treatments
+description5: AVEDA Treatments are FREE FROM- Silicones, Parabens, Mineral Oil, Petrolatum, Formaldehyde, Animal Ingredients & Synthetic Fragrance
+hairtreatments:
+ - type: Botanical Repair Treatment (AVEDA)
+   time: 40
+   price: 230
+   description: Intensive professional treatment strengthens and repairs three key layers of hair— from the surface to the core. Instantly improve the look and feel of damaged hair. Strengthen and repair from the inside out with bond-building plant molecules and botanical oils. Hair is visibly healthier, shinier — naturally full of life.
+ - type: Botanical Repair Color Treatment (AVEDA)
+   time: 40
+   price: 280
+   description: Intensive treatment for the hair before and after a color service to strengthen and repair hair simultaneously making it visibly healthier and shinier. Transform your hair with bond-building plant technology and botanical oils. Create stronger, softer and smoother hair with one pro treatment. Make color-treated hair 5x* stronger with one color treatment.
+ - type: Botanical Repair Scalp & Hair Treatment (AVEDA)
+   time: 60
+   price: 450
+   description: Luxurious, spa-style treatment stimulates, exfoliates and cleanses the scalp, and strengthens and repairs hair from the inside out with powerful plant technologies.
+ - type: Nutriplenish Ultimate Hydration Treatment (AVEDA)
+   time: 40
+   price: 380
+   description: Instantly replenish moisture with nutrients as you help relieve stress with oil and heat. Hair is lush and visibly healthier.
 treatment2_image: /assets/hair1.jpg
+category6: Treatments
+description6:
+hairtreatments2:
+ - type: Silver Maintain
+   time: 10
+   price: 95
+   description: Whether you have natural or coloured grey hair, you can help keep your cool tones glossy and bright with a tailored treatment. Silver Maintain effectively neutralises undesired yellow reflections for up to 5 weeks. Formula enriched with neutralising Purple pigment, the intense antioxidant power of Goji Berries to preserve colour for longer, and Argan Oil.
+ - type: ENERCOS Bond Building Protection
+   time: 20
+   price: 195
+   description: ENERCOS is a smart system bond builder which will repair damaged hair and unite the cuticles in your hair for a healthier look.
+ - type: Hair Repair
+   time: 15
+   price: 155
+   description: Ideal as intensive restructuring treatment for all treated, damaged and brittle hair. Repairs the structure of damaged hair, strengthening and protecting it over time. The hair is immediately healthier, stronger and brighter. Creamy reticulate texture for healthy, strong and shiny hair. The formula is enriched with amino acids and plant-derived protein repairing the hair fibre. In addition to adding strength and hydration, Argan and Avocado Oils deeply hydrate and revitalise hair fibre.
+ - type: Energising Intensive Hair
+   time: 25
+   price: 155
+   description: A weak scalp and fragile hair prone to thinning require a complete regenerating and energising treatment. Thanks to the presence of Crambe Abyssinica Seed Oil, the hair bulb improves its resistance and is considerably nourished. In addition, the formula is enriched with Peppermint essential oil, which gives a hint of freshness to the scalp, disinfecting and decongesting the treated area. Finally, the Trichogen VEG complex helps oxygenate the hair bulb and stimulates its activity.
+treatment2_image: /assets/hair1.jpg
+category7: Hair Straightening Treatments 
+hairtreatments3:
+- type: PRO Keratin - Brazilian Secret Hair (from AED 1000)
+  description: Brazilian Secrete Hair (BSH) is a Pro Keratin treatment made from the Brazil Amazon forest natural ingredients. It is designed to straighten your hair up to 80%. This treatment will provide protein and keratin to your hair, which will reparse, smooth it and create glossy and shiny look. After PRO Keratin BSH treatment effect will remain on your hair for up to 5 months.
+  treatments:
+   - treatment: Short Hair
+     time: 
+     price: 1000
+   - treatment: Medium Hair
+     time: 
+     price: 1350
+   - treatment: Long Hair
+     time: 
+     price: 1800
+   - treatment: X -Long Hair
+     time: 
+     price: 2300
+   - treatment: XX -Long Hair
+     time: 
+     price: 2950
+- type: Brazilian Blow Keratin Treatment (from AED 1100)
+  description: New Generation Brazilian Blow Keratin Treatment is complete styling time saver with almost no smell or colour shift. Proven risk free treatment that can be performed on porose chemically treated hair.
+  treatments:
+   - treatment: Short Hair
+     time: 
+     price: 1100
+   - treatment: Medium Hair
+     time: 
+     price: 1450
+   - treatment: Long Hair
+     time: 
+     price: 1900
+   - treatment: X -Long Hair
+     time: 
+     price: 2500
+   - treatment: XX -Long Hair
+     time: 
+     price: 3250
+
 ---
 
 <!-----------BURGER NAV SERVICES--------->
@@ -456,7 +534,7 @@ treatment2_image: /assets/hair1.jpg
 
     <!--------------Hair Highlight--------------->
     
-    <div class="col-6_md-12 padded mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
+    <div class="col-6_md-12 padded mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
         <h3 class="upper padded-b3">{{page.category4}} </h3>
         <div class="accordion">
 
@@ -516,73 +594,31 @@ treatment2_image: /assets/hair1.jpg
     <div class="col-6_md-12 padded hide-md" data-aos="fade-up" data-aos-duration="2000">
         <div class="bg-hair-services4" style="background-image: url('{{page.treatment_image}}');"></div>
     </div>
-    <div class="col-6_md-12 padded mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3"> Treatments </h3>
-        <p><em> AVEDA Treatments are FREE FROM: Silicones, Parabens, Mineral Oil, Petrolatum, Formaldehyde, Animal Ingredients & Synthetic Fragrance</em></p>
+
+    <div class="col-6_md-12 padded mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="upper padded-b3"> {{page.category5}} </h3>
+        <p><em> {{page.description5}}</em></p>
         <div class="accordion">
+
+            {% for item in page.hairtreatments %}
             <div class="accordion-item">
-              <div class="accordion-trigger grid margin-0 editable">
-                  <p>Botanical Repair Treatment (AVEDA)<br />Time: 40 min<br />Price: 230 AED</p>
+              <div class="accordion-trigger grid margin-0">
+                  <p>{{item.type}}<br />Time: {{item.time}} min<br />Price: {{item.price}} AED</p>
               </div>
               <div class="accordion-collapse">
                   <div class="grid-spaceBetween">
                     
                       <div class="col-12 padded-2 grid">
-                          <div class="col-12 editable">
-                              <p>Intensive professional treatment strengthens and repairs three key layers of hair&mdash; from the surface to the core. Instantly improve the look and feel of damaged hair. Strengthen and repair from the inside out with bond-building plant molecules and botanical oils. Hair is visibly healthier, shinier &mdash; naturally full of life.</p>
+                          <div class="col-12">
+                              <p>{{item.description}}</p>
                           </div>
                      </div>
                   </div>
               </div>
             </div>
 
-            <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Botanical Repair Color Treatment (AVEDA)<br />Time: 40 min<br />Price: 280 AED</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                      
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p>Intensive treatment for the hair before and after a color service to strengthen and repair hair simultaneously making it visibly healthier and shinier. Transform your hair with bond-building plant technology and botanical oils. Create stronger, softer and smoother hair with one pro treatment. Make color-treated hair 5x* stronger with one color treatment.</p>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-              </div>
+            {% endfor %}
 
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Botanical Repair Scalp &amp; Hair Treatment (AVEDA)<br />Time: 60 min<br />Price: 450 AED</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                      
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p>Luxurious, spa-style treatment stimulates, exfoliates and cleanses the scalp, and strengthens and repairs hair from the inside out with powerful plant technologies.</p>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-trigger grid margin-0 editable">
-                    <p>Nutriplenish Ultimate Hydration Treatment (AVEDA)<br />Time: 40 min<br />Price: 380 AED</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                      
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p>Instantly replenish moisture with nutrients as you help relieve stress with oil and heat. Hair is lush and visibly healthier.</p>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-              </div>
 
         </div>
      </div>
@@ -591,118 +627,72 @@ treatment2_image: /assets/hair1.jpg
          <!--------------Treatments--------------->
     
     <div class="col-6_md-12 padded mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3">Treatments</h3>
+        <h3 class="upper padded-b3">{{page.category6}}</h3>
         <div class="accordion">
+
+            {% for item in page.hairtreatments2 %}
             <div class="accordion-item">
-                <div class="accordion-trigger margin-0 grid editable">
-                    <div class="col-6">Silver Maintain</div>
-                    <div class="col-3">Time: 10min</div>
-                    <div class="col-3">Price: 95AED</div>
+              <div class="accordion-trigger grid margin-0">
+                <div class="col-6">{{item.type}}</div>
+                <div class="col-3">Time: {{item.time}}min</div>
+                <div class="col-3">Price: {{item.price}}AED</div>
+              </div>
+              <div class="accordion-collapse">
+                  <div class="grid-spaceBetween">
+                    
+                      <div class="col-12 padded-2 grid">
+                          <div class="col-12">
+                              <p>{{item.description}}</p>
+                          </div>
+                     </div>
+                  </div>
+              </div>
+            </div>
+
+            {% endfor %}
+
+            <div class="col-12">
+                <h3 class="upper padded-t">{{page.category7}}</h3>
+            </div>
+
+            {% for item in page.hairtreatments3 %}
+            <div class="accordion-item">
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}}</p>
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
                         <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p>Whether you have natural or coloured grey hair, you can help keep your cool tones glossy and bright with a tailored treatment. Silver Maintain effectively neutralises undesired yellow reflections for up to 5 weeks. Formula enriched with neutralising Purple pigment, the intense antioxidant power of Goji Berries to preserve colour for longer, and Argan Oil.</p>
+                            <div class="col-12">
+                                <p><br /><span class=""><em> {{item.description}}</em> </span></p>
                             </div>
+                            <div class="col-8"></div>
+                            <div class="col-2">
+                                <p class="right">Time<br />(min)</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="right">Price</p>
+                            </div>
+
+                            {% for service in item.treatments %}
+                            <div class="col-8">
+                                <p> {{service.treatment}} </p>
+                            </div>
+                            <div class="col-2">
+                                <span class="price"> {{service.time}} </span>
+                            </div>
+                            <div class="col-2">
+                                <span class="price"> {{service.price}} </span>
+                            </div>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-trigger margin-0 grid editable">
-                    <div class="col-6">ENERCOS Bond Building Protection</div>
-                    <div class="col-3">Time: 20min</div>
-                    <div class="col-3">Price: 195AED</div>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p>ENERCOS is a smart system bond builder which will repair damaged hair and unite the cuticles in your hair for a healthier look.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-trigger margin-0 grid editable">
-                    <div class="col-6">Hair Repair</div>
-                    <div class="col-3">Time: 10min</div>
-                    <div class="col-3">Price: 155AED</div>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p>Ideal as intensive restructuring treatment for all treated, damaged and brittle hair. Repairs the structure of damaged hair, strengthening and protecting it over time. The hair is immediately healthier, stronger and brighter. Creamy reticulate texture for healthy, strong and shiny hair. The formula is enriched with amino acids and plant-derived protein repairing the hair fibre. In addition to adding strength and hydration, Argan and Avocado Oils deeply hydrate and revitalise hair fibre.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-trigger margin-0 grid editable">
-                    <div class="col-6">&nbsp;</div>
-                    <div class="col-3">&nbsp;</div>
-                    <div class="col-3">&nbsp;</div>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-trigger margin-0 grid editable">
-                    <div class="col-6">&nbsp;</div>
-                    <div class="col-3">&nbsp;</div>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-trigger margin-0 grid editable">
-                    <div class="col-6">Energising Intensive Hair</div>
-                    <div class="col-3">Time: 10min</div>
-                    <div class="col-3">Price: 155AED</div>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                <p>A weak scalp and fragile hair prone to thinning require a complete regenerating and energising treatment. Thanks to the presence of Crambe Abyssinica Seed Oil, the hair bulb improves its resistance and is considerably nourished. In addition, the formula is enriched with Peppermint essential oil, which gives a hint of freshness to the scalp, disinfecting and decongesting the treated area. Finally, the Trichogen VEG complex helps oxygenate the hair bulb and stimulates its activity.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-trigger margin-0 grid editable">
-                    <div class="col-6">&nbsp;</div>
-                    <div class="col-3">&nbsp;</div>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-12 editable">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>
+
+              {% endfor %}  
+
         </div>
     </div>
      <div class="col-6_md-12 padded hide-md" data-aos="fade-up" data-aos-duration="2000">
