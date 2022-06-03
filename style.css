@@ -173,6 +173,36 @@ p:last-child {
   background: linear-gradient(0, rgba(248,248,248,0), rgba(248,248,248,1));
 } 
 
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+
+a.bg-image { display: block;}
+
+.wide-landscape {  padding-bottom: 33%;}
+.landscape     { padding-bottom: 66% ; }
+.tall-landscape {  padding-bottom: 68%;}
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.portrait2      { padding-bottom: 135%; }
+.square        { padding-bottom: 100%; }
+
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
 .bg-yellow { background-color: #f9ba4e; }
 .bg-blue { background-color: #D4DFE5; }
 .bg-red { background-color: #c86757; }
@@ -553,14 +583,6 @@ svg {
 
 .small-img {  max-width: 25%; }
 
-.bg-image {
-  background-size: cover;
-  background-position: center;
-  background-color: #FFF;
-  background-repeat: no-repeat;
-  opacity: 1;
-  transition: opacity 1s;
-}
 
 .bg-image.fashion1 {
   background-image: url('/assets/4.jpg');
@@ -1241,12 +1263,6 @@ hr.wide {
   /*background-position: center;  */
   position: relative;
 }
-
-
-.portrait       {  padding-bottom: 115%;}
-.landscape      {  padding-bottom: 65%;}
-.wide-landscape {  padding-bottom: 33%;}
-.tall-landscape {  padding-bottom: 68%;}
 
 .opacity08 { opacity: 0.8;}
 
