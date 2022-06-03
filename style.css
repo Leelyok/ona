@@ -657,38 +657,6 @@ margin-bottom: -5rem;
   background-position: 50% 14%;
 }
 
-.bg-nailcare {  
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #F2EEE9;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-}
-
-.bg-hands2 {  
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #F2EEE9;
-  background-repeat: no-repeat;
-  min-height: 110vh;
-}
-
-.bg-add-ons {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #F2EEE9;
-  background-repeat: no-repeat;
-  min-height: 50vh;
-}
 
 .bg-hair-services {
   background-size: cover;
