@@ -123,6 +123,69 @@ sculpting:
       treatment: Body Sculpting
       time: 90
       price: 700
+holisticbody_image: /assets/facials-2.jpg
+holisticbody-name: Holistic Healing Treatments
+holisticbody:
+ - type: Reiki Healing (from AED 300)
+   description: Reiki is an energy healing technique that promotes relaxation, reduces stress and anxiety through gentle touch. Reiki practitioners use their hands to deliver energy to your body, improving the flow and balance of your energy to support healing. Experience Reiki to transform your life & feel inner joy. Release negative emotions like anger, sadness, & experience relaxation, improved relationships and a reduction of stress. This is a hands-on natural healing using the universal life force energy.
+   healing:
+    - treatment: Reiki Healing
+      time: 30
+      price: 300
+    - treatment: Reiki Healing
+      time: 60
+      price: 500
+    - treatment: Reiki Healing
+      time: 90
+      price: 700
+ - type: Pranic Healing (from AED 300)
+   description: Pranic Healing is a simple, yet powerful & effective system of non-touching energy healing, consists of cleansing and energizing. This is highly developed and tested system of energy treatment that uses prana to balance, harmonize & transform the body's energy processes. Prana in Sanskrit means Life-Force. In Pranic Healing, "dirty" energy, which our body getting in contact with, is “swept” away out of your aura and chakras. Fresh prana is then directed to the areas where it is needed to facilitate rapid healing.
+   healing:
+    - treatment: Pranic Healing
+      time: 30
+      price: 300
+    - treatment: Pranic Healing
+      time: 60
+      price: 500
+    - treatment: Pranic Healing
+      time: 90
+      price: 700
+ - type: Access bar (from AED 300)
+   description: An amazing treatment that involves gently touching 32 different energy centers on your head & once unlocked & released they flow down into the body. These centers (aka bars) contain all the thoughts, ideas, beliefs, emotions, and considerations that you have stored in any lifetime.
+   healing:
+    - treatment: Access bar
+      time: 30
+      price: 300
+    - treatment: Access bar
+      time: 60
+      price: 500
+    - treatment: Access bar
+      time: 90
+      price: 700
+ - type: Crystal Healing (from AED 300)
+   description: Crystals with specific stones are said to help to relieve specific ailments such as anxiety, depression and insomnia, or more physical ailments such as digestive problems. They're proven to promote the flow of good energy and help rid the body and mind of negative energy for physical and emotional benefits. Historically speaking, crystals are touted as ancient forms of medicine, with philosophies borrowed from Hinduism and Buddhism.
+   healing:
+    - treatment: Crystal Healing
+      time: 30
+      price: 300
+    - treatment: Crystal Healing
+      time: 60
+      price: 500
+    - treatment: Crystal Healing
+      time: 90
+      price: 700
+ - type: Body Sculpting (from AED 300)
+   description: Sculpts and reshapes the body and helps to maintain successful weight loss. For the best results this is combined with Pranic healing for psychological health and well being.
+   healing:
+    - treatment: Body Sculpting
+      time: 30
+      price: 300
+    - treatment: Body Sculpting
+      time: 60
+      price: 500
+    - treatment: Body Sculpting
+      time: 90
+      price: 700
 ---
 
 <!-----------BURGER NAV SERVICES--------->
@@ -201,41 +264,57 @@ sculpting:
     <div class="col-6_md-10_sm-12 hide-md" data-aos="fade-up" data-aos-duration="2000">
         <div class="bg-image square" style="background-image: url('{{page.treatmentroom_image}}');"></div>
     </div>
-    
 
-    <div class="col-6_md-10_sm-12" data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-image portrait" style="background-image: url('{{page.holistic_image}}');"></div>
+    <div class="col-6_md-12 hide-md" data-aos="fade-up" data-aos-duration="2000">
+        <div class="bg-image square" style="background-image: url('{{page.holisticbody_image}}')"></div>
     </div>
+    <div class="col-6_md-12-middle padded mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="upper padded-b3">{{page.holisticbody-name}}</h3>
+        <div class="accordion">
 
-    <div class="col-6_md-12-middle padded padded-t-0 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
-        <div class="grid">
-            <div class="col-8 editable">
-                <h3 class="upper padded-b3">Holistic healing treatments</h3>
-            </div>
-            <div class="col-2-middle editable">
-                <p><span class="price"> Time (min) </span></p>
-            </div>
-            <div class="col-2-middle editable">
-                <p><span class="price"> Price (AED) </span></p>
-            </div>
+            {% for item in page.holisticbody %}
+            <div class="accordion-item">
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}}</p>
+                </div>
+                <div class="accordion-collapse">
+                    <div class="grid-spaceBetween">
 
-                {% for item in page.sculpting %}
-                <div class="col-8">
-                    <p>{{item.treatment}}</p>
-                </div>
-                <div class="col-2">
-                    <p><span class="price"> {{item.time}} </span></p>
-                </div>
-                <div class="col-2">
-                    <p><span class="price"> {{item.price}} </span></p>
-                </div>
-                {% endfor %}     
+                        <div class="col-12 padded-2 grid">
+                            <div class="col-12">
+                              <p><em>{{item.description}}</em></p>
+                            </div>
+                            <div class="col-8">
+                                
+                            </div>
+                            <div class="col-2">
+                                <p class="right">Time<br />(min)</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="right">Price</p>
+                            </div>
 
-                <div class="col-12 editable">
-                    <p><em>*Sculpts and reshapes the body and helps to maintain successful weight loss. For the best results this is combined with Pranic healing for psychological health and well being.</em></p>
-                </div>      
+                            {% for service in item.healing %}
+                            <div class="col-8">
+                                <p>{{service.treatment}}</p>
+                            </div>
+                            <div class="col-2">
+                                <p><span class="price">{{service.time}}</span></p>
+                            </div>
+                            <div class="col-2">
+                                <p><span class="price">{{service.price}}</span></p>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+    {% endfor %}
+
         </div>
     </div>
+
     
 </section>
 
