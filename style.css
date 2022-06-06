@@ -187,7 +187,7 @@ p:last-child {
 
 a.bg-image { display: block;}
 
-.wide-landscape {  padding-bottom: 33%;}
+.landscape-wide {  padding-bottom: 33%;}
 .landscape     { padding-bottom: 66% ; }
 .tall-landscape {  padding-bottom: 68%;}
 .portrait-tall { padding-bottom: 175%; }
