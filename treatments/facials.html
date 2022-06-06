@@ -2,9 +2,11 @@
 layout: default
 title: Face treatments
 main-name: FACE
+photo1:
+ - aspect-ratio: square
+   pevoniafacial_image: /assets/massage3.jpg
 holisticfacial_image: /assets/facials.jpg
 holisticfacial-name: Holistic Facial Treatments
-pevoniafacial_image: /assets/massage3.jpg
 pevonia2facial_image: /assets/facials-3.jpg
 pevonia:
  - service: De-Stress Eye Treatment from Puffiness & Dark Circles
@@ -100,7 +102,10 @@ holisticfacials:
 
     <!-- First column  -->
     <div class="col-6_md-10_sm-12 " data-aos="fade-up" data-aos-duration="2000">
-        <div class="bg-image square" style="background-image: url('{{page.pevoniafacial_image}}');"></div>
+
+      {% for item in page.photo1 %}
+        <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.pevoniafacial_image}}');"></div>
+      {% endfor %}
     </div>
        <!-- Second column  -->
     
