@@ -36,6 +36,8 @@ body {
 .tall-80 { min-height: 80vh; }
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
+.tall-110 { min-height: 110vh; }
+.tall-120 { min-height: 120vh; }
 
 .padded-0 { padding: 0;  }
 .padded      { padding: 5%;    }
