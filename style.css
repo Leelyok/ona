@@ -1197,6 +1197,12 @@ a.bg-image {  display: block;}
     margin: 1rem 0;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+}
 
 .flex-display {
   display: flex;
@@ -1623,6 +1629,9 @@ display: none;
 
   .flex-flip-md { flex-direction: row-reverse; }
   .flex-flip-col-md { flex-direction: column-reverse; }
+  .flex {
+    min-height: 70vh;
+  }
 
   .padded-10 { padding: 1rem;}
   .md-p-t5   { padding-top: 5%;}
@@ -1836,6 +1845,9 @@ display: none;
 
     .menu-div {
       padding: 1rem 1rem;
+    }
+    .flex {
+      min-height: 60vh;
     }
 
     
