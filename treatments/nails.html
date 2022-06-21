@@ -1,8 +1,165 @@
 ---
 layout: default
 title: Nails treatments
+main-name: NAILS
+category1: Classic Polish (Vinylux, CND, Andreia)
 classicpolish_image: /assets/7.png
+classicpolish:
+  - type: Express Manicure, Pedicure, Combo (from AED 50)
+    description: Nail cut, file & oil application
+    polish:
+     - treatment: Manicure
+       time: 15
+       price: 50
+     - treatment: Pedicure
+       time: 25
+       price: 55
+     - treatment: Combo (4 hands)
+       time: 25
+       price: 85
+  - type: Essential Manicure, Pedicure, Combo (from AED 80)
+    description: Nail cut, file, soaking, cuticle work & short massage
+    polish:
+     - treatment: Manicure
+       time: 30
+       price: 80
+     - treatment: Pedicure
+       time: 40
+       price: 85
+     - treatment: Combo (4 hands)
+       time: 40
+       price: 145
+  - type: Full Color Manicure, Pedicure, Combo (4 hands) - VINYLAX (from AED 100)
+    description: Nail Cut, file, soaking, cuticle work, short massage & polish application
+    polish:
+     - treatment: Manicure
+       time: 45
+       price: 100
+     - treatment: Pedicure
+       time: 50
+       price: 105
+     - treatment: Combo (4 hands)
+       time: 50
+       price: 190
+  - type: French Manicure, Pedicure, Combo (from AED 115)
+    description: Nail Cut, file, soaking, cuticle work, short massage & French polish application
+    polish:
+     - treatment: Manicure
+       time: 50
+       price: 115
+     - treatment: Pedicure
+       time: 60
+       price: 135
+     - treatment: Combo (4 hands)
+       time: 60
+       price: 225
+  - type: Halal / Hypoallergenic Manicure, Pedicure, Combo (from AED 110)
+    description:
+    polish:
+     - treatment: Manicure
+       time: 45
+       price: 110
+     - treatment: Pedicure
+       time: 50
+       price: 115
+     - treatment: Combo (4 hands)
+       time: 50
+       price: 205
+  - type: Little Princess Manicure, Pedicure, Combo (from AED 50)
+    description: Nail cut, file, & polish application
+    polish:
+     - treatment: Manicure
+       time: 20
+       price: 50
+     - treatment: Pedicure
+       time: 20
+       price: 55
+     - treatment: Combo (4 hands)
+       time: 20
+       price: 85
+  - type: Polish Change (from AED 65)
+    polish:
+        - treatment: Classic - Hands
+          time: 20
+          price: 65
+        - treatment: Classic - Feet
+          time: 15
+          price: 65
+        - treatment: Classic - Combo (4 hands)
+          time: 30
+          price: 110
+        - treatment: French - Hands
+          time: 35
+          price: 70
+        - treatment: French - Feet
+          time: 25
+          price: 70
+        - treatment: French - Combo (4 hands)
+          time: 50
+          price: 120
 gelpolish_image: /assets/NAIL-CARE.jpg
+category2: Gel Polish (Shellac,CND, Andreia)
+gelpolish:
+  - type: Full Color Manicure, Pedicure, Combo (Vegan Available!) (from AED 145)
+    description: Nail Cut, file, soaking, cuticle work, short massage & Gel polish application
+    gel:
+     - treatment: Manicure
+       time: 75
+       price: 145
+     - treatment: Pedicure
+       time: 65
+       price: 175
+     - treatment: Combo (4 hands)
+       time: 75
+       price: 290
+  - type: French Manicure, Pedicure, Combo (Vegan Available!) (from AED 170)
+    description: Nail Cut, file, soaking, cuticle work, short massage & Gel French polish application
+    gel:
+     - treatment: French - Manicure
+       time: 90
+       price: 170
+     - treatment: French - Pedicure
+       time: 75
+       price: 200
+     - treatment: French - Combo (4 hands)
+       time: 90
+       price: 340
+  - type: Polish Change (from AED 40)
+    description:
+    gel:
+     - treatment: Removal - Hands
+       time: 30
+       price: 40
+     - treatment: Removal - Feet
+       time: 25
+       price: 40
+     - treatment: Removal - Combo
+       time: 35
+       price: 65
+     - treatment: 
+       time:
+       price: 
+     - treatment: Full Color - Hands
+       time: 25
+       price: 95
+     - treatment: Full Color - Feet
+       time: 35
+       price: 115
+     - treatment: Full Color - Combo
+       time: 30
+       price: 180
+     - treatment: 
+       time:
+       price:
+     - treatment: French - Hands
+       time: 45
+       price: 115
+     - treatment: French - Feet
+       time: 35
+       price: 140
+     - treatment: French - Combo
+       time: 45
+       price: 235
 treatments_image: /assets/2.jpg
 ---
 
@@ -15,424 +172,99 @@ treatments_image: /assets/2.jpg
 
 <!---------------NAILS-------------->
 <section class="padded padded-t-0 md-p-t5 sm-p-t15 menu grid-center" id="top">
-    <div class="col-12 center editable" data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-big">NAILS</h2>
+    <div class="col-12 center" data-aos="fade-up" data-aos-duration="2000">
+        <h2 class="text-big">{{page.main-name}}</h2>
     </div>
 <!-- First column  -->
     <div class="col-6_md-10_sm-12 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
         <div class="bg-image portrait2" style="background-image: url({{page.classicpolish_image}});"></div>
     </div>
        <!-- Second column  -->
-    <div class="col-6_md-12-middle padded padded-t-0 mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3 editable">
-            Classic Polish (Vinylux, CND, Andreia)
-        </h3>
+    <div class="col-6_md-12-middle padded padded-t-0 mob-pad-0" data-aos="fade-up" data-aos-duration="2000">
+        <h3 class="upper padded-b3"> {{page.category1}} </h3>
         <div class="accordion">
+
+            {% for item in page.classicpolish %}
             <div class="accordion-item">
-              <div class="accordion-trigger text-trigger grid margin-0 editable">
-                  <p>Express Manicure, Pedicure, Combo<br /><em> *Nail cut, file &amp; oil application</em> (from AED 50)</p>
-              </div>
-              <div class="accordion-collapse">
-                  <div class="grid-spaceBetween">
-                      <!-- First column nail services. -->
-                      <div class="col-12 padded-2 grid">
-                          <div class="col-10 editable">
-                              <p>Manicure</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 50 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>Pedicure</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 55 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>Combo (4 hands)</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 85 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p><em> *Timing from 15 min </em></p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>Essential Manicure, Pedicure, Combo<br /><em> *Nail cut, file, soaking, cuticle work &amp; short massage</em> (from AED 80)</p>
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}} }<br/><span class="text-xxs"><em> {{item.description}}</em> </span></p>
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
                         <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Manicure</p>
+
+                            <div class="col-8"></div>
+                            <div class="col-2">
+                                <p class="right">Time<br />(min)</p>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 80 </span></p>
+                            <div class="col-2">
+                                <p class="right">Price</p>
                             </div>
-                            <div class="col-10 editable">
-                                <p>Pedicure</p>
+
+                            {% for service in item.polish %}
+                            <div class="col-8">
+                                <p> {{service.treatment}} </p>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 85 </span></p>
+                            <div class="col-2">
+                                <span class="price"> {{service.time}} </span>
                             </div>
-                            <div class="col-10 editable">
-                                <p>Combo (4 hands)</p>
+                            <div class="col-2">
+                                <span class="price"> {{service.price}} </span>
                             </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 145 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 30 min </em></p>
-                            </div>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>Full Color Manicure, Pedicure, Combo (4 hands) - VINYLAX<br /><em>*Nail Cut, file, soaking, cuticle work, short massage &amp; polish application</em><br />(from AED 100)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Manicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 100 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Pedicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 105 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Combo (4 hands)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 190 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 45 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
+              {% endfor %}  
 
-              <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>French Manicure, Pedicure, Combo<br /><em>*Nail Cut, file, soaking, cuticle work, short massage &amp; French polish application</em><br />(from AED 115)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Manicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 115 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Pedicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 135 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Combo (4 hands)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 225 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 50 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>Halal / Hypoallergenic Manicure, Pedicure, Combo<br /><em>*Nail Cut, file, soaking, cuticle work, short massage &amp; polish application</em><br />(from AED 110)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Manicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 110</span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Pedicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 115</span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Combo (4 hands)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 205</span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 45 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>Little Princess Manicure, Pedicure, Combo<br /><em>*Nail cut, file, &amp; polish application</em> (from AED 50)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Manicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 50 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Pedicure</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 55 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Combo (4 hands)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 85 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 20 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>Polish Change (from AED 65)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                            <div class="col-10 editable">
-                                <p>Classic - Hands</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 65 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Classic - Feet</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 65 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>Classic - Combo (4 hands)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 110 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>French - Hands</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 70 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>French - Feet</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 70 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p>French - Combo (4 hands)</p>
-                            </div>
-                            <div class="col-2 editable">
-                                <p><span class="price"> 120 </span></p>
-                            </div>
-                            <div class="col-10 editable">
-                                <p><em> *Timing from 15 min </em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
+            
         </div>
     </div>
 
 
     <!-- First column  -->
     <div class="col-6_md-12-middle padded padded-t-0 mob-pad-0 editable" data-aos="fade-up" data-aos-duration="2000">
-        <h3 class="upper padded-b3 editable">
-            Gel Polish (Shellac,CND, Andreia)
-        </h3>
+        <h3 class="upper padded-b3 editable">{{page.category2}}</h3>
         <div class="accordion">
+           
+            {% for item in page.gelpolish %}
             <div class="accordion-item">
-              <div class="accordion-trigger text-trigger grid margin-0 editable">
-                  <p>Full Color Manicure, Pedicure, Combo (Vegan Available!)<br /><em>*Nail Cut, file, soaking, cuticle work, short massage &amp; Gel polish application</em><br />(from AED 145)</p>
-              </div>
-              <div class="accordion-collapse">
-                  <div class="grid-spaceBetween">
-                      <!-- First column nail services. -->
-                      <div class="col-12 padded-2 grid">
-                        <div class="col-10 editable">
-                            <p>Manicure</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 145 </span></p>
-                        </div>
-                        <div class="col-10 editable">
-                            <p>Pedicure</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 175 </span></p>
-                        </div>
-                        <div class="col-10 editable">
-                            <p>Combo (4 hands)</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 290 </span></p>
-                        </div>
-                        <div class="col-10 editable">
-                            <p><em> *Timing from 75 min </em></p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>French Manicure, Pedicure, Combo (Vegan Available!)<br /><em>*Nail Cut, file, soaking, cuticle work, short massage &amp; Gel French polish application</em> (from AED 170)</p>
+                <div class="accordion-trigger grid margin-0">
+                    <p>{{item.type}} }<br/><span class="text-xxs"><em> {{item.description}}</em> </span></p>
                 </div>
                 <div class="accordion-collapse">
                     <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
                         <div class="col-12 padded-2 grid">
-                          <div class="col-10 editable">
-                              <p>French - Manicure</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 170 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>French - Pedicure</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 200 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>French - Combo</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 340 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p><em> *Timing from 70 min </em></p>
-                          </div>
+
+                            <div class="col-8"></div>
+                            <div class="col-2">
+                                <p class="right">Time<br />(min)</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="right">Price</p>
+                            </div>
+
+                            {% for service in item.gel %}
+                            <div class="col-8">
+                                <p> {{service.treatment}} </p>
+                            </div>
+                            <div class="col-2">
+                                <span class="price"> {{service.time}} </span>
+                            </div>
+                            <div class="col-2">
+                                <span class="price"> {{service.price}} </span>
+                            </div>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <div class="accordion-trigger text-trigger grid margin-0 editable">
-                    <p>Polish Change (from AED 40)</p>
-                </div>
-                <div class="accordion-collapse">
-                    <div class="grid-spaceBetween">
-                        <!-- First column nail services. -->
-                        <div class="col-12 padded-2 grid">
-                          <div class="col-10 editable">
-                              <p>Removal - Hands</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 40 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>Removal - Feet</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 40 </span></p>
-                          </div>
-                          <div class="col-10 editable">
-                              <p>Removal - Combo</p>
-                          </div>
-                          <div class="col-2 editable">
-                              <p><span class="price"> 65 </span></p>
-                          </div>
-                          <div class="col-12"></div>
-                          <div class="col-10 editable">
-                              <p>Full Color - Hands</p>
-                          </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 95 </span></p>
-                        </div>
-                        <div class="col-10 editable">
-                            <p>Full Color - Feet</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 115 </span></p>
-                        </div>
-                        <div class="col-10 editable">
-                            <p>Full Color - Combo</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 180 </span></p>
-                        </div>
-                        <div class="col-12"></div>
-                        <div class="col-10 editable">
-                            <p>French - Hands</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 115 </span></p>
-                        </div>
-                        <div class="col-10 editable">
-                            <p>French - Feet</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 140 </span></p>
-                        </div>
-                        <div class="col-10 editable">
-                            <p>French - Combo</p>
-                        </div>
-                        <div class="col-2 editable">
-                            <p><span class="price"> 235 </span></p>
-                        </div>
-                          <div class="col-10 editable">
-                              <p><em> *Timing from 25 min </em></p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
+              {% endfor %}  
         </div>
     </div>
 <!-- Second column  -->
