@@ -585,6 +585,11 @@ svg {
 
 .small-img {  max-width: 25%; }
 
+.capped-width {
+  max-width: 1700px;
+  margin: auto; 
+}
+
 
 .bg-image.fashion1 {
   background-image: url('/assets/4.jpg');
