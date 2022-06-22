@@ -39,7 +39,7 @@ gallery:
 
         {% for item in page.gallery %}
         <a class="{{item.column-size}} padded-2 {% cycle 'm-t-m15','margin-t-0','margin-t-15', 'm-t-m25','m-t-m10','margin-t-5r' %} md-mt-0" href="{{item.background_image}}">
-            <div class="flex-display">
+            <div class="flex-display" data-aos="fade-up" data-aos-duration="2000">
                  <img src="{{item.background_image}}"> 
             </div>
         </a> 
