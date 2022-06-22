@@ -1784,7 +1784,9 @@ display: none;
   .sm-padded-l10 { padding-left: 10%;}
   .margin-10 {  margin: 0;}
   .mob-mt    {  margin-top: 2rem;  }
-  .sm-mr-m12    {  margin-right: -12%;  }
+  .sm-m-book    {  
+    margin-right: -12%;
+    margin-top: -3%;  }
   .sm-p-t15  {  padding-top: 15%;}
   .sm-p-t20-offers {
     padding-top: 20%;
