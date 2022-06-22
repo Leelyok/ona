@@ -1784,13 +1784,21 @@ display: none;
   .sm-padded-l10 { padding-left: 10%;}
   .margin-10 {  margin: 0;}
   .mob-mt    {  margin-top: 2rem;  }
-
+  .sm-mr-m12    {  margin-right: -12%;  }
   .sm-p-t15  {  padding-top: 15%;}
   .sm-p-t20-offers {
     padding-top: 20%;
     padding-bottom: 10%;
     padding-left: 10%;
     padding-right: 10%;
+  }
+  .padded-20  { padding: 14rem;  }
+  
+  .sm-padded-t25 {
+    padding-top: 25%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
   }
 
   h1 { font-size: 2rem;}
@@ -1830,7 +1838,7 @@ display: none;
     .emphasis {   font-size: 0.8rem;   }
     .slider-item p { font-size: 1.2rem;}
 
-    .padded-20  { padding: 14rem;  }
+   
 
     .shape-drop-sm {
       border-top-left-radius: 22rem;
@@ -1865,18 +1873,15 @@ display: none;
       border-bottom-right-radius: 15rem;
     }
 
-    .sm-padded-t25 {
-      padding-top: 25%;
-      padding-bottom: 0%;
-      padding-right: 0%;
-      padding-left: 0%;
-    }
-
     .menu-div {
       padding: 1rem 1rem;
     }
     .flex {
       min-height: 60vh;
+    }
+  
+    .sm-width80 {
+      max-width: 80%;
     }
 
     
