@@ -139,6 +139,14 @@ $(".testimonial-slider-container").slick({
     }]
 });
 
+// light gallery
+
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false
+});
+
+
 // Menu auto-hide
 
 let previousOffset = 0;

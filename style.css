@@ -101,6 +101,7 @@ body {
 .padded-l-0  { padding-left: 0;  }
 .padded-left {  padding: 0rem 20px;}
 .padded-2lr  {  padding: 0% 2%;  }
+.padded-10lr  {  padding: 0% 10%;  }
 
 .padded-v {    padding: 5vh 0; }
 .padded-vi {    padding: 5vh 1vh; }
@@ -110,15 +111,21 @@ body {
 .margin      { margin: 1rem; }
 .margin-10     { margin: 10%; }
 .margin-0     { margin: 0; }
+.margin-t-0     { margin-top: 0; }
 .margin-t-1 {  margin-top: 1rem;}
 .margin-t-2 {  margin-top: 2rem;}
 .margin-t-5 {  margin-top: 5%;}
+.margin-t-5r {  margin-top: 5rem;}
 .margin-t-10 {  margin-top: 10rem;}
 .margin-t-15 {  margin-top: 15rem;}
 .margin-t-20 {  margin-top: 20rem;}
+.margin-t-25 {  margin-top: 25rem;}
 .margin-t-m7 { margin-top: -7rem; }
 .margin-t-m1 { margin-top: -1rem; }
 .m-t-m10 {  margin-top: -10rem;}
+.m-t-m5 {  margin-top: -5rem;}
+.m-t-m15 {  margin-top: -15rem;}
+.m-t-m25 {  margin-top: -25rem;}
 .m-l-m7  {  margin-left: -7rem;}
 .m-l-m4  {  margin-left: -4rem;}
 
@@ -587,6 +594,11 @@ svg {
 
 .capped-width {
   max-width: 1700px;
+  margin: auto; 
+}
+
+.capped-width-narrow {
+  max-width: 1100px;
   margin: auto; 
 }
 
@@ -1688,6 +1700,9 @@ display: none;
     margin-top: 5rem;
   }
 
+  .md-mt-0 {
+    margin-top: 0;
+  }
   .sm-margin-tm4 {
     margin-top: -7px;
   }

@@ -1,0 +1,39 @@
+---
+layout: default
+title: Offers of ONA Beauty Hub
+main-name: Offers
+gallery:
+ - column-size: col-4_md-6_sm-12-middle
+   aspect-ratio: 
+   background_image: /assets/offer-1.jpg
+ - column-size: col-4_md-6_sm-12-middle
+   aspect-ratio: 
+   background_image: /assets/offer-2.jpg
+ - column-size: col-4_md-6_sm-12-midlle
+   aspect-ratio: 
+   background_image: /assets/offer-3.png
+ - column-size: col-4_md-6_sm-12-middle
+   aspect-ratio: 
+   background_image: /assets/offer-4.png
+ - column-size: col-4_md-6_sm-12-middle
+   aspect-ratio: 
+   background_image: /assets/offer-5.png
+ - column-size: col-4_md-6_sm-12-middle
+   aspect-ratio: 
+   background_image: /assets/offer-6.png
+
+---
+<!----------empty section------
+<section class="padded bg-cacao"></section>
+<!--------------GALLEY------------->
+<section class="bg-cacao project-gallery md-p-t5 sm-p-t15 center padded-10lr grid-center" id="lightgallery">
+
+    {% for item in page.gallery %}
+    <a class="{{item.column-size}} padded-2 {% cycle 'm-t-m15','margin-t-0','margin-t-15', 'm-t-m25','m-t-m10','margin-t-5r' %} md-mt-0" href="{{item.background_image}}">
+        <div class="flex">
+             <img src="{{item.background_image}}"> 
+        </div>
+    </a> 
+    {% endfor %}  
+
+</section>
