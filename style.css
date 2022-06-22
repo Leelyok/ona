@@ -1652,6 +1652,7 @@ display: none;
 
   .padded-10 { padding: 1rem;}
   .md-p-t5   { padding-top: 5%;}
+  .md-p-t10   { padding-top: 10%;}
    
   .title-text {   font-size: 1.5rem;  }
 
@@ -1768,10 +1769,29 @@ display: none;
   .flex-flip-sm { flex-direction: row-reverse; }
   .flex-flip-col-sm { flex-direction: column-reverse; }
 
+  
+  .mob-padded-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mob-pad-0 { padding: 0;  }
+  .mob-pad-10 { padding: 10%  }
+  .mob-pad-15 { padding: 15%  }
+  .sm-padded-t2 { padding-top: 2%;}
+  .sm-padded-t10 { padding-top: 10%;}
+
+  .sm-padded-l { padding-left: 5%;}
+  .sm-padded-l10 { padding-left: 10%;}
   .margin-10 {  margin: 0;}
   .mob-mt    {  margin-top: 2rem;  }
 
   .sm-p-t15  {  padding-top: 15%;}
+  .sm-p-t20-offers {
+    padding-top: 20%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
   h1 { font-size: 2rem;}
   h2 { font-size: 1.4rem;}
@@ -1800,17 +1820,6 @@ display: none;
   .text-xxs {   font-size: 0.7rem;}
 
   .text-big { font-size: 2.5rem; }
-
-  .mob-padded-0 {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  .mob-pad-0 { padding: 0;  }
-  .sm-padded-t2 { padding-top: 2%;}
-  .sm-padded-t10 { padding-top: 10%;}
-
-  .sm-padded-l { padding-left: 5%;}
-  .sm-padded-l10 { padding-left: 10%;}
 
   .logo-img {
       top: 0;

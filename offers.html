@@ -23,14 +23,21 @@ gallery:
    background_image: /assets/offer-6.png
 
 ---
-<!----------empty section------
-<section class="padded bg-cacao"></section>
+
 <!--------------GALLEY------------->
-<section class="bg-cacao project-gallery md-p-t5 sm-p-t15 center padded-10lr grid-center" id="lightgallery">
+<section class="bg-cacao project-gallery padded-10 md-p-t10 sm-p-t20-offers center grid-center" id="lightgallery">
+    <div class="col-9 grid-right hide-sm">
+        <div class="col-7 hide-md"></div>
+        <div class="col-3_md-6-middle">
+            <a href="https://wa.me/971563990935" target="_blank" class="z-10 width45 fix">
+                <img src="/assets/book now-06.png">
+            </a>
+        </div>
+    </div>
 
     {% for item in page.gallery %}
     <a class="{{item.column-size}} padded-2 {% cycle 'm-t-m15','margin-t-0','margin-t-15', 'm-t-m25','m-t-m10','margin-t-5r' %} md-mt-0" href="{{item.background_image}}">
-        <div class="flex">
+        <div class="flex-display">
              <img src="{{item.background_image}}"> 
         </div>
     </a> 
