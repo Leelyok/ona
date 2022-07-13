@@ -1,17 +1,12 @@
 _select_data:
   aspect-ratios:
-    - square
-    - portrait
-    - portrait2
-    - portrait-tall
-    - landscape
-    - landscape-wide
+    one-third: 
+    one-half: 
+    two-thirds: 
+    full-width: 
 
   column-sizes:
-    col-6: One Half
-    col-12: Full Width
-    col-4: One Third
-    col-3: One Quarter
-    col-6_sm-12: One Half (Stacked)
-    col-4_sm-12: One Third (Stacked)
-    col-3_sm-12: One Quarter (Stacked)
+    col-one-third: one-third
+    col-one-half: one-half
+    col-two-thirds: two-thirds
+    col-full-width: full-width

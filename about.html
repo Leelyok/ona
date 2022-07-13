@@ -3,6 +3,89 @@ layout: default
 title: About ONA Beauty Hub
 behind_image: /uploads/marishka-1-of-1.jpg
 philosophy_image: /assets/6.jpg
+gallery_name: Gallery
+gallery:
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-1.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-3.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-7.jpg
+ - column-size: col-one-half
+   aspect-ratio: one-half
+   background_image: /assets/gallery/ona-beauty-hub-photo-8.jpg
+ - column-size: col-one-half
+   aspect-ratio: one-half
+   background_image: /assets/gallery/ona-beauty-hub-photo-9.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-10.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-13.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-25.jpg
+ - column-size: col-two-thirds
+   aspect-ratio: two-thirds
+   background_image: /assets/gallery/ona-beauty-hub-photo-4.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-26.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-27.jpg
+ - column-size: col-two-thirds
+   aspect-ratio: two-thirds
+   background_image: /assets/gallery/ona-beauty-hub-photo-16.jpg
+ - column-size: col-full-width
+   aspect-ratio: full-width
+   background_image: /assets/gallery/ona-beauty-hub-photo-11.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-5.jpg 
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-28.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-6.jpg
+ - column-size: col-one-half
+   aspect-ratio: one-half
+   background_image: /assets/gallery/ona-beauty-hub-photo-12.jpg
+ - column-size: col-one-half
+   aspect-ratio: one-half
+   background_image: /assets/gallery/ona-beauty-hub-photo-14.jpg
+ - column-size: col-two-thirds
+   aspect-ratio: two-thirds
+   background_image: /assets/gallery/ona-beauty-hub-photo-15.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-17.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-18.jpg
+ - column-size: col-two-thirds
+   aspect-ratio: two-thirds
+   background_image: /assets/gallery/ona-beauty-hub-photo-19.jpg
+ - column-size: col-one-half
+   aspect-ratio: one-half
+   background_image: /assets/gallery/ona-beauty-hub-photo-20.jpg
+ - column-size: col-one-half
+   aspect-ratio: one-half
+   background_image: /assets/gallery/ona-beauty-hub-photo-21.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-22.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-23.jpg
+ - column-size: col-one-third
+   aspect-ratio: one-third
+   background_image: /assets/gallery/ona-beauty-hub-photo-24.jpg
 ---
 
 <!----------BURGER BUTTON------------->
@@ -101,16 +184,23 @@ philosophy_image: /assets/6.jpg
     </div>
   </section>
 
-  <!--------------empty section------------->
- <section class="padded hide-md"></section>
+  <!--------------empty section------------>
+ <section class="padded-t">
+  <div class="editable">
+    <h2 class="center"> <span class="text-tan">ONÅ </span>Gallery </h2>
+  </div>
+ </section>
 
-  <!-----------------------
-<section class="grid-center padded">
-    <div class="col-5_md-9_sm-12-middle bg-hands2 tall-70 shape-drop shape-drop-md editable" data-aos="fade-up" data-aos-duration="2000"></div>
-    <div class="col-6_md-9_sm-12-middle padded editable" data-aos="fade-up" data-aos-duration="2000">
-       <h2>  The <span class="text-cacao">ONÅ </span> Vision </h2>
-      <p class="text-1r justify"> Our mission here at ONA to help you restore your equilibrium. We want your time spent here to be an awakening of your desires and senses. A place where you feel peace and harmony, where you always want to return. <br /> <br />ONA Beauty Hub is your community of girls and women, with the same desires and aspirations, no matter your age, social or ethnographic group.<br /> We promise to you provide you with highly qualified specialists, who use a wide variety of organic products tailored to your every need. And who are dedicated to their work and sensitively follow our philosophy to surround you with the care and professionalism you deserve.</p>
-    </div>
+  <!--------------GALLERY-------------------->
+  <section class="project-gallery padded center capped-width-narrow" id="lightgallery">
+      
+
+      {% for item in page.gallery %}
+      <a class="{{item.column-size}} padded-05" href="{{item.background_image}}">
+          <div class="bg-image {{item.aspect-ratio}}" 
+               style="background-image: url('{{item.background_image}}');">    
+          </div>
+      </a> 
+      {% endfor %} 
+
 </section>
-
----------------------------------------------->

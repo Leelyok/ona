@@ -839,9 +839,70 @@ margin-bottom: -5rem;
   background-position: top;
 }
 
+/* GALLERY */
+
+.project-gallery {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.project-gallery a {
+  display: block;
+}
+
+  .col-one-third {
+    flex-basis: 33.33%;
+    max-width: 33.33333%;
+  }
+
+  .col-one-half {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-two-thirds {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+  }
+
+  .col-full-width {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .one-third {
+    padding-bottom: 123%;
+  }
+
+  .one-half {
+    padding-bottom: 115%;
+  }
+
+  .two-thirds {
+    padding-bottom: 60%;
+  }
+
+  .full-width {
+    padding-bottom: 60%;
+  }
+
+.portfolio-item .bg-image {
+  padding-bottom: 120%;
+  margin-bottom: 1.5rem;
+  transition: all 0.5s;
+  margin-top: 2rem;
+}
+
+.portfolio-item:hover .bg-image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+/* end gallery*/
+
 
 /* Header & Footer - #c2b0a1 */
-
 
 header {    
   display: inline;
@@ -898,7 +959,6 @@ footer {    color: #1D1D1B;}
 
 
 /*  Mobile Menu Styles  */
-
 
 .mobile-menu {
   display: none; 
@@ -1204,8 +1264,6 @@ footer {    color: #1D1D1B;}
     padding: 0.6rem;
     color: #000;
 }
-
-a.bg-image {  display: block;}
 
 /* Icon Grid Section  */
 .icon-section img {
